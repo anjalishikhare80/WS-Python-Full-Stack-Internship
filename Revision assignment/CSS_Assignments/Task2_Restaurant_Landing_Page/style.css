@@ -1,5 +1,5 @@
 
-/* Reset */
+
 * {
     margin: 0;
     padding: 0;
@@ -68,7 +68,7 @@ body {
     transform: translateY(-3px);
 }
 
-/* Hero Section */
+
 .hero {
     min-height: 540px;
     background:
@@ -110,7 +110,7 @@ body {
     margin-bottom: 30px;
 }
 
-/* About Section */
+
 .about {
     display: flex;
     align-items: center;
@@ -157,7 +157,7 @@ body {
     color: #713b18;
 }
 
-/* Menu Section */
+
 .menu {
     padding: 80px 8%;
     background-color: #f7eee5;
@@ -222,7 +222,6 @@ body {
     font-size: 19px;
 }
 
-/* Contact Section */
 .contact {
     text-align: center;
     padding: 75px 20px;
@@ -237,7 +236,7 @@ body {
     margin-bottom: 25px;
 }
 
-/* Footer */
+
 footer {
     background-color: #30251f;
     color: white;
@@ -245,7 +244,7 @@ footer {
     padding: 22px;
 }
 
-/* Responsive Design */
+
 @media (max-width: 900px) {
     .navbar {
         padding: 20px 5%;
