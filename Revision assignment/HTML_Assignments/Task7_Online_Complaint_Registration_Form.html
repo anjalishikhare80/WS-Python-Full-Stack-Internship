@@ -1,0 +1,264 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Complaint Registration Form</title>
+</head>
+
+<body>
+
+    <!-- Main Heading -->
+
+    <h1>ONLINE COMPLAINT REGISTRATION FORM</h1>
+
+    <h2>Customer Support Portal</h2>
+
+    <p>
+        Welcome to our Online Complaint Registration Portal.
+        If you are facing any problem with our services,
+        please fill out the form below.
+        Our support team will review your complaint
+        and try to resolve it as soon as possible.
+    </p>
+
+    <hr>
+
+    <form action="#" method="post" enctype="multipart/form-data">
+
+        <!-- Personal Information -->
+
+        <h2>1. Contact Information</h2>
+
+        <label for="fullname">Full Name:</label>
+        <br>
+
+        <input type="text"
+               id="fullname"
+               name="fullname"
+               placeholder="Enter your full name"
+               required>
+
+        <br><br>
+
+        <label for="email">Email Address:</label>
+        <br>
+
+        <input type="email"
+               id="email"
+               name="email"
+               placeholder="Enter your email address"
+               required>
+
+        <br><br>
+
+        <label for="phone">Mobile Number:</label>
+        <br>
+
+        <input type="tel"
+               id="phone"
+               name="phone"
+               placeholder="Enter 10 digit mobile number"
+               pattern="[0-9]{10}"
+               required>
+
+        <br><br>
+
+        <label for="address">Address:</label>
+        <br>
+
+        <textarea id="address"
+                  name="address"
+                  rows="3"
+                  cols="40"
+                  placeholder="Enter your address"></textarea>
+
+        <hr>
+
+        <!-- Complaint Details -->
+
+        <h2>2. Complaint Details</h2>
+
+        <label for="complaintid">Complaint Title:</label>
+        <br>
+
+        <input type="text"
+               id="complaintid"
+               name="complaint_title"
+               placeholder="Enter complaint title"
+               required>
+
+        <br><br>
+
+        <label for="category">Select Complaint Category:</label>
+        <br>
+
+        <select id="category" name="category" required>
+
+            <option value="">-- Select Category --</option>
+            <option value="Technical Issue">Technical Issue</option>
+            <option value="Payment Issue">Payment Issue</option>
+            <option value="Product Issue">Product Issue</option>
+            <option value="Service Issue">Service Issue</option>
+            <option value="Delivery Issue">Delivery Issue</option>
+            <option value="Other">Other</option>
+
+        </select>
+
+        <br><br>
+
+        <label>Complaint Priority:</label>
+        <br>
+
+        <input type="radio"
+               id="low"
+               name="priority"
+               value="Low"
+               required>
+
+        <label for="low">Low</label>
+
+        <br>
+
+        <input type="radio"
+               id="medium"
+               name="priority"
+               value="Medium">
+
+        <label for="medium">Medium</label>
+
+        <br>
+
+        <input type="radio"
+               id="high"
+               name="priority"
+               value="High">
+
+        <label for="high">High</label>
+
+        <br>
+
+        <input type="radio"
+               id="urgent"
+               name="priority"
+               value="Urgent">
+
+        <label for="urgent">Urgent</label>
+
+        <br><br>
+
+        <label for="description">Complaint Description:</label>
+        <br>
+
+        <textarea id="description"
+                  name="description"
+                  rows="6"
+                  cols="50"
+                  placeholder="Explain your complaint in detail"
+                  required></textarea>
+
+        <hr>
+
+        <!-- File Attachment -->
+
+        <h2>3. Upload Supporting Documents</h2>
+
+        <p>
+            You can upload screenshots, images or documents
+            related to your complaint.
+        </p>
+
+        <label for="attachment">Choose File:</label>
+        <br>
+
+        <input type="file"
+               id="attachment"
+               name="attachment"
+               accept=".jpg,.jpeg,.png,.pdf,.doc,.docx">
+
+        <hr>
+
+        <!-- Resolution Details -->
+
+        <h2>4. Preferred Resolution Details</h2>
+
+        <label for="resolutiondate">
+            Preferred Resolution Date:
+        </label>
+
+        <br>
+
+        <input type="date"
+               id="resolutiondate"
+               name="resolution_date"
+               required>
+
+        <br><br>
+
+        <label for="resolution">Preferred Resolution Method:</label>
+        <br>
+
+        <select id="resolution" name="resolution_method" required>
+
+            <option value="">-- Select Resolution Method --</option>
+            <option value="Email">Email</option>
+            <option value="Phone Call">Phone Call</option>
+            <option value="In Person">In Person</option>
+
+        </select>
+
+        <br><br>
+
+        <!-- Declaration -->
+
+        <input type="checkbox"
+               id="declaration"
+               name="declaration"
+               required>
+
+        <label for="declaration">
+            I confirm that the information provided above is correct.
+        </label>
+
+        <hr>
+
+        <!-- Form Buttons -->
+
+        <input type="submit" value="Submit Complaint">
+
+        <input type="reset" value="Clear Form">
+
+    </form>
+
+    <hr>
+
+    <!-- Contact Information -->
+
+    <h2>Need Help?</h2>
+
+    <p>
+        Email:
+        <a href="mailto:support@example.com">
+            support@example.com
+        </a>
+    </p>
+
+    <p>Contact Number: 9876543210</p>
+
+    <hr>
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>Thank You for Contacting Our Support Team!</p>
+
+        <p>Copyright &copy; 2026 Customer Support Portal</p>
+
+    </footer>
+
+</body>
+
+</html>

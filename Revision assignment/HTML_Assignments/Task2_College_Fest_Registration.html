@@ -1,0 +1,177 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Fest Registration</title>
+</head>
+
+<body>
+
+    <h1>College Fest Registration Form</h1>
+
+    <hr>
+
+    <h2>Welcome to Our College Fest 2026!</h2>
+
+    <p>
+        Join us for an exciting college festival filled with
+        fun, creativity, competitions and entertainment.
+        Fill out the registration form below to participate.
+    </p>
+
+    <hr>
+
+    <form action="#" method="post">
+
+        <h2>Personal Information</h2>
+
+        <label for="fullname">Full Name:</label>
+        <br>
+        <input type="text" id="fullname" name="fullname"
+               placeholder="Enter your full name" required>
+
+        <br><br>
+
+        <label for="email">Email Address:</label>
+        <br>
+        <input type="email" id="email" name="email"
+               placeholder="Enter your email" required>
+
+        <br><br>
+
+        <label for="phone">Phone Number:</label>
+        <br>
+        <input type="tel" id="phone" name="phone"
+               placeholder="Enter your phone number"
+               pattern="[0-9]{10}" required>
+
+        <br><br>
+
+        <label>Gender:</label>
+        <br>
+
+        <input type="radio" id="male" name="gender" value="Male" required>
+        <label for="male">Male</label>
+
+        <input type="radio" id="female" name="gender" value="Female">
+        <label for="female">Female</label>
+
+        <input type="radio" id="other" name="gender" value="Other">
+        <label for="other">Other</label>
+
+        <hr>
+
+        <h2>Academic Information</h2>
+
+        <label for="course">Select Your Course:</label>
+        <br>
+
+        <select id="course" name="course" required>
+
+            <option value="">-- Select Course --</option>
+            <option value="Computer Science">Computer Science Engineering</option>
+            <option value="Information Technology">Information Technology</option>
+            <option value="Mechanical">Mechanical Engineering</option>
+            <option value="Civil">Civil Engineering</option>
+            <option value="Electrical">Electrical Engineering</option>
+            <option value="Electronics">Electronics Engineering</option>
+
+        </select>
+
+        <br><br>
+
+        <label for="year">Select Your Year:</label>
+        <br>
+
+        <select id="year" name="year" required>
+
+            <option value="">-- Select Year --</option>
+            <option value="First Year">First Year</option>
+            <option value="Second Year">Second Year</option>
+            <option value="Third Year">Third Year</option>
+            <option value="Final Year">Final Year</option>
+
+        </select>
+
+        <hr>
+
+        <h2>Event Selection</h2>
+
+        <p>Select the events in which you want to participate:</p>
+
+        <input type="checkbox" id="dance" name="event" value="Dance">
+        <label for="dance">Dance Competition</label>
+
+        <br>
+
+        <input type="checkbox" id="singing" name="event" value="Singing">
+        <label for="singing">Singing Competition</label>
+
+        <br>
+
+        <input type="checkbox" id="coding" name="event" value="Coding">
+        <label for="coding">Coding Competition</label>
+
+        <br>
+
+        <input type="checkbox" id="quiz" name="event" value="Quiz">
+        <label for="quiz">Quiz Competition</label>
+
+        <br>
+
+        <input type="checkbox" id="sports" name="event" value="Sports">
+        <label for="sports">Sports Competition</label>
+
+        <br>
+
+        <input type="checkbox" id="art" name="event" value="Art">
+        <label for="art">Art Competition</label>
+
+        <hr>
+
+        <h2>Registration Date</h2>
+
+        <label for="date">Select Registration Date:</label>
+        <br>
+
+        <input type="date" id="date" name="registration_date" required>
+
+        <br><br>
+
+        <label for="message">Any Suggestions or Questions:</label>
+        <br>
+
+        <textarea id="message" name="message"
+                  rows="5" cols="40"
+                  placeholder="Enter your message here"></textarea>
+
+        <hr>
+
+        <input type="checkbox" id="declaration"
+               name="declaration" required>
+
+        <label for="declaration">
+            I confirm that the information provided is correct.
+        </label>
+
+        <br><br>
+
+        <input type="submit" value="Register Now">
+
+        <input type="reset" value="Clear Form">
+
+    </form>
+
+    <hr>
+
+    <footer>
+        <p>Thank you for registering!</p>
+        <p>Copyright &copy; 2026 College Fest</p>
+    </footer>
+
+</body>
+
+</html>

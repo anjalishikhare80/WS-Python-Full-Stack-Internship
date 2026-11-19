@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        .container{
+            border: 1px solid black;
+            padding: 28px 32px;
+            margin: auto;
+            background-color: white;
+            border-radius: 12px;
+        }
+
+        
+       
+
+        
+
+
+
+    </style>
+
+
+
+</head>
+<body>
+
+    <h1>Student Admission Form</h1>
+        <p class="intro">
+            Please complete the form below to apply for admission.
+        </p>
+
+    <div class="container">
+        <form action="#" method="post">
+            <label for="fname"><b>Full Name</b></label>
+            <input type="text" id="fname" name="first name" placeholder="Enter your full name"><br>
+
+            <label for="email"><b>Email</b></label>
+            <input type="email" id="email" name="email" placeholder="Enter your email"><br>
+
+            <label for="password"><b>Password</b></label>
+            <input type="password" id="password" name="password" placeholder="Enter password"><br>
+
+            <label for="mobile number"><b>Mobile Number</b></label>
+            <input type="telphone" id="mobile number" name="mobile number" placeholder="Enetr mobile number"><br>
+
+            <label for="dob"><b>Date of Birth</b></label>
+            <input type="date" id="dob" name="date of birth"><br><br>
+
+            <label for=""><b>Gender :</b></label><br>
+            <label for="female">Female</label>
+            <input type="radio" id="female" name="gender" value="female">
+
+            <label for=""><b>Male</b></label>
+            <input type="radio" id="male" name="gender" value="male"><br>
+
+            <label for=""><b>Hobbies :</b></label><br>
+
+            <label for="reading">Reading</label>
+            <input type="checkbox" name="reading" id="reading" value="reading">
+
+            <label for="sports">Sports</label>
+            <input type="checkbox" id="sports" name="sports" value="sports">
+
+            <label for="music">Music</label>
+            <input type="checkbox" id="music" value="music" >
+
+            <label for="drawing">Drawing</label>
+            <input type="checkbox" name="drawing" id="drawing" value="drawing"><br>
+
+            <label for="address"><b>Address</b></label>
+            <textarea name="address" id="address" rows="4" cols="40" placeholder="Enter your address"></textarea><br>
+
+            <label for="course">Course</label>
+            <select name="course" id="course">
+                <option value="">Select Option</option>
+                <option value="computer science">computer Science</option>
+                <option value="information techanology">Information techanology</option>
+                <option value="mechanical">Mechanical Engineering</option>
+                <option value="civil">Civil Engineerinig</option>
+            </select><br>
+
+
+            <label for="profile-picture">Profile Picture</label>
+            <input type="file" id="profile-picture" name="profile-picture" accept="image/*"><br>
+
+            <label for="fcolour">Favorite Color</label>
+            <input type="color" id="fcolour" name="favorite colour" value="#245ca6"><br>
+
+            <label for="skill level"> Skill Level</label>
+            
+            <input type="range" id="skill level" name="skilllevel" min="1" max="10" value="5"
+            oninput="document.getElementById('skills-value').textContent = this.value"><br>
+
+           
+
+            <button type="submit">submit Application</button>
+
+            <button type="reset">Reset Form</button>
+
+            <p><b>Note:</b> This is a front-end practice form.
+                Submitting it will not save the application
+                until a backend is connected.</p>
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+        <label for=""></label>
+        </form>
+    </div>
+    
+</body>
+</html>
