@@ -1,0 +1,228 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Air India - Fly the New India</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    
+    <header class="header">
+        <a href="#" class="logo">
+            <span class="logo-symbol">✦</span>
+            <span>AIR INDIA</span>
+        </a>
+
+        <nav class="navigation">
+            <a href="#booking">Book</a>
+            <a href="#offers">Offers</a>
+            <a href="#destinations">Destinations</a>
+            <a href="#about">About Us</a>
+        </nav>
+
+        <a href="#booking" class="login-button">Sign In</a>
+    </header>
+
+    
+    <section class="hero">
+        <div class="hero-content">
+            <p class="eyebrow">YOUR JOURNEY BEGINS HERE</p>
+            <h1>Fly the New India</h1>
+            <p>Discover new destinations and experience the joy of flying.</p>
+            <a href="#booking" class="primary-button">Book Your Flight</a>
+        </div>
+    </section>
+
+    
+    <section class="booking-section" id="booking">
+        <div class="booking-box">
+            <div class="booking-heading">
+                <h2>Plan Your Journey</h2>
+                <p>Where would you like to go?</p>
+            </div>
+
+            <form class="booking-form">
+                <div class="input-group">
+                    <label for="from">From</label>
+                    <input
+                        type="text"
+                        id="from"
+                        placeholder="Departure city"
+                        required
+                    >
+                </div>
+
+                <div class="input-group">
+                    <label for="to">To</label>
+                    <input
+                        type="text"
+                        id="to"
+                        placeholder="Destination city"
+                        required
+                    >
+                </div>
+
+                <div class="input-group">
+                    <label for="departure">Departure</label>
+                    <input type="date" id="departure" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="return">Return</label>
+                    <input type="date" id="return">
+                </div>
+
+                <div class="input-group">
+                    <label for="passengers">Passengers</label>
+                    <select id="passengers">
+                        <option value="1">1 Adult</option>
+                        <option value="2">2 Adults</option>
+                        <option value="3">3 Adults</option>
+                        <option value="4">4 Adults</option>
+                        <option value="5">5 Adults</option>
+                    </select>
+                </div>
+
+                <button type="button" class="search-button"
+                    onclick="document.getElementById('booking-message').textContent =
+                    'Demo page: connect a flight booking service to search real flights.'">
+                    Search Flights
+                </button>
+            </form>
+
+            <p id="booking-message" class="booking-message"></p>
+        </div>
+    </section>
+
+    
+    <section class="section" id="offers">
+        <div class="section-heading">
+            <p class="eyebrow">TRAVEL MORE, SPEND LESS</p>
+            <h2>Special Offers</h2>
+            <p>Discover exciting opportunities for your next journey.</p>
+        </div>
+
+        <div class="card-container">
+            <article class="offer-card">
+                <img
+                    src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=800&q=80"
+                    alt="Beautiful mountain destination"
+                >
+                <div class="card-content">
+                    <span class="card-label">EXPLORE</span>
+                    <h3>Discover the World</h3>
+                    <p>Find your next adventure and make unforgettable memories.</p>
+                    <a href="#destinations" class="text-link">Explore More →</a>
+                </div>
+            </article>
+
+            <article class="offer-card">
+                <img
+                    src="https://images.unsplash.com/photo-1519501025264-65ba15a82390?auto=format&fit=crop&w=800&q=80"
+                    alt="City skyline at night"
+                >
+                <div class="card-content">
+                    <span class="card-label">CITY BREAKS</span>
+                    <h3>Your Next City Escape</h3>
+                    <p>Discover vibrant cities, culture, food, and new experiences.</p>
+                    <a href="#destinations" class="text-link">Explore More →</a>
+                </div>
+            </article>
+
+            <article class="offer-card">
+                <img
+                    src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80"
+                    alt="Tropical beach with blue water"
+                >
+                <div class="card-content">
+                    <span class="card-label">GETAWAYS</span>
+                    <h3>Escape to Paradise</h3>
+                    <p>Relax by the sea and enjoy a refreshing holiday.</p>
+                    <a href="#destinations" class="text-link">Explore More →</a>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    
+    <section class="destinations-section" id="destinations">
+        <div class="section-heading">
+            <p class="eyebrow">INSPIRATION FOR YOUR NEXT TRIP</p>
+            <h2>Popular Destinations</h2>
+            <p>Start exploring some amazing places around the world.</p>
+        </div>
+
+        <div class="destination-container">
+            <article class="destination-card">
+                <img
+                    src="https://images.unsplash.com/photo-1519501025264-65ba15a82390?auto=format&fit=crop&w=700&q=80"
+                    alt="Mumbai city"
+                >
+                <div class="destination-overlay">
+                    <h3>Mumbai</h3>
+                    <p>India</p>
+                </div>
+            </article>
+
+            <article class="destination-card">
+                <img
+                    src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=700&q=80"
+                    alt="Paris city and Eiffel Tower"
+                >
+                <div class="destination-overlay">
+                    <h3>Paris</h3>
+                    <p>France</p>
+                </div>
+            </article>
+
+            <article class="destination-card">
+                <img
+                    src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=700&q=80"
+                    alt="Dubai skyline"
+                >
+                <div class="destination-overlay">
+                    <h3>Dubai</h3>
+                    <p>United Arab Emirates</p>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    
+    <section class="about-section" id="about">
+        <div class="about-content">
+            <p class="eyebrow">WELCOME ABOARD</p>
+            <h2>Making Every Journey Special</h2>
+            <p>
+                From the moment you plan your trip to the moment you arrive,
+                every journey brings an opportunity to discover something new.
+                Explore the world and make every mile memorable.
+            </p>
+            <a href="#booking" class="primary-button">Start Your Journey</a>
+        </div>
+    </section>
+
+    
+    <footer class="footer">
+        <div class="footer-top">
+            <a href="#" class="footer-logo">✦ AIR INDIA</a>
+            <p>Your world, your journey.</p>
+        </div>
+
+        <div class="footer-links">
+            <a href="#booking">Book Flights</a>
+            <a href="#offers">Offers</a>
+            <a href="#destinations">Destinations</a>
+            <a href="#about">About Us</a>
+        </div>
+
+        <p class="copyright">
+            © 2026 Air India Homepage Clone. Created for educational purposes.
+        </p>
+    </footer>
+
+</body>
+</html>
