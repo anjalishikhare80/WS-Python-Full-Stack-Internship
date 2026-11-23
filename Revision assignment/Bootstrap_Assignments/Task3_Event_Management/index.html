@@ -1,0 +1,294 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EventEase | Event Management</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="#">EventEase</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarMenu">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#events">Events</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+            <a href="#events" class="btn btn-light ms-lg-3">Explore Events</a>
+        </div>
+    </div>
+</nav>
+
+<section id="home" class="hero-section">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-7">
+                <span class="badge bg-warning text-dark mb-3">Discover • Connect • Celebrate</span>
+                <h1>Make Every Event <span>Unforgettable</span></h1>
+                <p>Discover exciting events, meet new people and create memories that last forever.</p>
+                <a href="#events" class="btn btn-primary btn-lg">Explore Events</a>
+                <a href="#about" class="btn btn-outline-light btn-lg ms-2">Learn More</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-5" id="events">
+    <div class="container">
+        <div class="section-heading text-center mb-5">
+            <span>OUR EVENTS</span>
+            <h2>Upcoming Events</h2>
+            <p>Find the perfect event and reserve your spot today.</p>
+        </div>
+
+        <div id="eventCarousel" class="carousel slide mb-5" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#eventCarousel" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#eventCarousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#eventCarousel" data-bs-slide-to="2"></button>
+            </div>
+
+            <div class="carousel-inner rounded-4">
+                <div class="carousel-item active">
+                    <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=1400&q=85" class="d-block w-100" alt="Technology conference">
+                    <div class="carousel-caption">
+                        <h3>Technology Conference 2026</h3>
+                        <p>Explore the future of technology and innovation.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://images.unsplash.com/photo-1506157786151-b8491531f063?auto=format&fit=crop&w=1400&q=85" class="d-block w-100" alt="Music festival">
+                    <div class="carousel-caption">
+                        <h3>Music Festival</h3>
+                        <p>Enjoy an unforgettable musical experience.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=1400&q=85" class="d-block w-100" alt="Business workshop">
+                    <div class="carousel-caption">
+                        <h3>Business Workshop</h3>
+                        <p>Learn new skills and grow your career.</p>
+                    </div>
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#eventCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#eventCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-4">
+                <div class="card event-card h-100">
+                    <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=800&q=85" class="card-img-top" alt="Technology conference">
+                    <div class="card-body">
+                        <span class="badge bg-primary mb-2">Technology</span>
+                        <h5 class="card-title">Tech Innovation Summit</h5>
+                        <p class="card-text">Discover the latest trends in AI, web development and technology.</p>
+                        <div class="event-info">
+                            <p>📅 15 December 2026</p>
+                            <p>📍 Pune, Maharashtra</p>
+                            <p>🕒 10:00 AM</p>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <strong class="event-price">₹499</strong>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#registrationModal" data-event="Tech Innovation Summit">Register</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="card event-card h-100">
+                    <img src="https://images.unsplash.com/photo-1506157786151-b8491531f063?auto=format&fit=crop&w=800&q=85" class="card-img-top" alt="Music festival">
+                    <div class="card-body">
+                        <span class="badge bg-danger mb-2">Music</span>
+                        <h5 class="card-title">Live Music Festival</h5>
+                        <p class="card-text">Enjoy live performances, amazing music and a wonderful atmosphere.</p>
+                        <div class="event-info">
+                            <p>📅 20 December 2026</p>
+                            <p>📍 Mumbai, Maharashtra</p>
+                            <p>🕒 5:00 PM</p>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <strong class="event-price">₹799</strong>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#registrationModal" data-event="Live Music Festival">Register</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="card event-card h-100">
+                    <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=800&q=85" class="card-img-top" alt="Business workshop">
+                    <div class="card-body">
+                        <span class="badge bg-success mb-2">Workshop</span>
+                        <h5 class="card-title">Business Growth Workshop</h5>
+                        <p class="card-text">Improve your business knowledge and learn practical professional skills.</p>
+                        <div class="event-info">
+                            <p>📅 05 January 2027</p>
+                            <p>📍 Nashik, Maharashtra</p>
+                            <p>🕒 11:00 AM</p>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <strong class="event-price">₹299</strong>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#registrationModal" data-event="Business Growth Workshop">Register</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="card event-card h-100">
+                    <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=800&q=85" class="card-img-top" alt="Networking event">
+                    <div class="card-body">
+                        <span class="badge bg-warning text-dark mb-2">Networking</span>
+                        <h5 class="card-title">Professional Networking Meet</h5>
+                        <p class="card-text">Connect with professionals, exchange ideas and build new relationships.</p>
+                        <div class="event-info">
+                            <p>📅 12 January 2027</p>
+                            <p>📍 Kolhapur, Maharashtra</p>
+                            <p>🕒 2:00 PM</p>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <strong class="event-price">₹199</strong>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#registrationModal" data-event="Professional Networking Meet">Register</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="card event-card h-100">
+                    <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=800&q=85" class="card-img-top" alt="Celebration event">
+                    <div class="card-body">
+                        <span class="badge bg-info text-dark mb-2">Celebration</span>
+                        <h5 class="card-title">Annual Celebration Night</h5>
+                        <p class="card-text">Celebrate special moments with entertainment, food and exciting activities.</p>
+                        <div class="event-info">
+                            <p>📅 18 January 2027</p>
+                            <p>📍 Solapur, Maharashtra</p>
+                            <p>🕒 6:00 PM</p>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <strong class="event-price">₹599</strong>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#registrationModal" data-event="Annual Celebration Night">Register</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="card event-card h-100">
+                    <img src="https://images.unsplash.com/photo-1523580494863-6f3031224c94?auto=format&fit=crop&w=800&q=85" class="card-img-top" alt="Student seminar">
+                    <div class="card-body">
+                        <span class="badge bg-secondary mb-2">Education</span>
+                        <h5 class="card-title">Student Career Seminar</h5>
+                        <p class="card-text">Explore career opportunities and get guidance from experienced speakers.</p>
+                        <div class="event-info">
+                            <p>📅 25 January 2027</p>
+                            <p>📍 Pandharpur, Maharashtra</p>
+                            <p>🕒 9:30 AM</p>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <strong class="event-price">Free</strong>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#registrationModal" data-event="Student Career Seminar">Register</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="about-section py-5" id="about">
+    <div class="container text-center">
+        <span>ABOUT US</span>
+        <h2 class="mt-2">We Make Events Memorable</h2>
+        <p class="mx-auto">EventEase is a simple event discovery platform where people can explore upcoming events, learn about event details and register for experiences they love.</p>
+    </div>
+</section>
+
+<section class="py-5" id="contact">
+    <div class="container text-center">
+        <h2>Ready to Join an Event?</h2>
+        <p>Explore our upcoming events and reserve your place today.</p>
+        <a href="#events" class="btn btn-primary btn-lg">Find Your Event</a>
+    </div>
+</section>
+
+<footer class="text-center py-4">
+    <p class="mb-0">© 2026 EventEase. All Rights Reserved.</p>
+</footer>
+
+<div class="modal fade" id="registrationModal" tabindex="-1" aria-labelledby="registrationModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="registrationModalLabel">Event Registration</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="registrationForm">
+                    <div class="mb-3">
+                        <label for="eventName" class="form-label">Selected Event</label>
+                        <input type="text" class="form-control" id="eventName" readonly>
+                    </div>
+                    <div class="mb-3">
+                        <label for="fullName" class="form-label">Full Name</label>
+                        <input type="text" class="form-control" id="fullName" placeholder="Enter your full name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email Address</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="phone" class="form-label">Mobile Number</label>
+                        <input type="tel" class="form-control" id="phone" pattern="[0-9]{10}" maxlength="10" placeholder="Enter 10-digit mobile number" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Submit Registration</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    const registrationModal = document.getElementById("registrationModal");
+
+    registrationModal.addEventListener("show.bs.modal", function (event) {
+        const button = event.relatedTarget;
+        const eventTitle = button.getAttribute("data-event");
+        document.getElementById("eventName").value = eventTitle;
+    });
+
+    document.getElementById("registrationForm").addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        const fullName = document.getElementById("fullName").value;
+        const selectedEvent = document.getElementById("eventName").value;
+
+        alert("Thank you, " + fullName + "! Your registration for " + selectedEvent + " has been submitted successfully.");
+
+        this.reset();
+
+        const modal = bootstrap.Modal.getInstance(registrationModal);
+        modal.hide();
+    });
+</script>
+
+</body>
+</html>

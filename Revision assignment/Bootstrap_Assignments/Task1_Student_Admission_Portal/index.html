@@ -1,0 +1,324 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Admission Portal</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">Edu<span>Portal.</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarMenu">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#admission">Admission</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item ms-lg-3"><a href="#admission" class="btn btn-primary-custom">Apply Now</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero" id="home">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-7 hero-content">
+                    <span class="hero-tag">ADMISSIONS OPEN 2026-27</span>
+                    <h1>Build Your Future With <span>Quality Education</span></h1>
+                    <p>Take the first step towards your dreams. Join our academic community and discover opportunities to learn, grow and succeed.</p>
+                    <div class="d-flex flex-wrap gap-3">
+                        <a href="#admission" class="btn btn-primary-custom">Apply for Admission</a>
+                        <a href="#about" class="btn btn-outline-primary rounded-pill px-4">Learn More</a>
+                    </div>
+                    <div class="hero-info">
+                        <div><strong>1000+</strong><small>Students</small></div>
+                        <div><strong>50+</strong><small>Expert Faculty</small></div>
+                        <div><strong>20+</strong><small>Courses</small></div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="hero-illustration">
+                        <div class="illustration-circle">
+                            <div class="book-icon">📚</div>
+                            <div class="cap-icon">🎓</div>
+                            <div class="pencil-icon">✏️</div>
+                        </div>
+                        <div class="floating-card">
+                            <span>✦</span>
+                            Your Future Starts Here!
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="admission-section section-padding" id="admission">
+        <div class="container">
+            <div class="section-heading">
+                <span>START YOUR JOURNEY</span>
+                <h2>Student Admission Form</h2>
+                <p>Fill in the details below to submit your admission application.</p>
+            </div>
+
+            <div class="form-container">
+                <form id="admissionForm">
+                    <div class="form-section-title">
+                        <span>01</span>
+                        <div>
+                            <h3>Personal Information</h3>
+                            <p>Enter your basic personal details.</p>
+                        </div>
+                    </div>
+
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <label for="fullName" class="form-label">Full Name *</label>
+                            <input type="text" class="form-control" id="fullName" placeholder="Enter your full name" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="email" class="form-label">Email Address *</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="phone" class="form-label">Mobile Number *</label>
+                            <input type="tel" class="form-control" id="phone" pattern="[0-9]{10}" maxlength="10" placeholder="10-digit mobile number" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="dob" class="form-label">Date of Birth *</label>
+                            <input type="date" class="form-control" id="dob" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label" for="gender">Gender *</label>
+                            <select class="form-select" id="gender" required>
+                                <option value="">Select Gender</option>
+                                <option>Male</option>
+                                <option>Female</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="nationality" class="form-label">Nationality</label>
+                            <input type="text" class="form-control" id="nationality" placeholder="Enter nationality">
+                        </div>
+                    </div>
+
+                    <div class="form-divider"></div>
+
+                    <div class="form-section-title">
+                        <span>02</span>
+                        <div>
+                            <h3>Academic Information</h3>
+                            <p>Provide your educational details.</p>
+                        </div>
+                    </div>
+
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <label for="qualification" class="form-label">Last Qualification *</label>
+                            <select class="form-select" id="qualification" required>
+                                <option value="">Select Qualification</option>
+                                <option>10th Standard</option>
+                                <option>12th Standard</option>
+                                <option>Diploma</option>
+                                <option>Graduation</option>
+                                <option>Post Graduation</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="percentage" class="form-label">Percentage / CGPA</label>
+                            <input type="text" class="form-control" id="percentage" placeholder="Enter percentage or CGPA">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="course" class="form-label">Course Applying For *</label>
+                            <select class="form-select" id="course" required>
+                                <option value="">Select Course</option>
+                                <option>B.Tech Computer Science</option>
+                                <option>B.Tech Information Technology</option>
+                                <option>B.Tech Mechanical Engineering</option>
+                                <option>B.Tech Civil Engineering</option>
+                                <option>BBA</option>
+                                <option>BCA</option>
+                                <option>MBA</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="year" class="form-label">Academic Year *</label>
+                            <select class="form-select" id="year" required>
+                                <option value="">Select Academic Year</option>
+                                <option>2026-2027</option>
+                                <option>2027-2028</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-divider"></div>
+
+                    <div class="form-section-title">
+                        <span>03</span>
+                        <div>
+                            <h3>Address Information</h3>
+                            <p>Enter your current residential address.</p>
+                        </div>
+                    </div>
+
+                    <div class="row g-3">
+                        <div class="col-12">
+                            <label for="address" class="form-label">Full Address *</label>
+                            <textarea class="form-control" id="address" rows="3" placeholder="Enter your complete address" required></textarea>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="city" class="form-label">City *</label>
+                            <input type="text" class="form-control" id="city" placeholder="Enter city" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="state" class="form-label">State *</label>
+                            <input type="text" class="form-control" id="state" placeholder="Enter state" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="pincode" class="form-label">PIN Code *</label>
+                            <input type="text" class="form-control" id="pincode" pattern="[0-9]{6}" maxlength="6" placeholder="6-digit PIN code" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="country" class="form-label">Country</label>
+                            <input type="text" class="form-control" id="country" value="India">
+                        </div>
+                    </div>
+
+                    <div class="form-divider"></div>
+
+                    <div class="form-section-title">
+                        <span>04</span>
+                        <div>
+                            <h3>Upload Documents</h3>
+                            <p>Upload the required documents for admission.</p>
+                        </div>
+                    </div>
+
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <label for="photo" class="form-label">Passport Size Photograph *</label>
+                            <input type="file" class="form-control" id="photo" accept="image/*" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="marksheet" class="form-label">Previous Marksheet *</label>
+                            <input type="file" class="form-control" id="marksheet" accept=".pdf,.jpg,.jpeg,.png" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="identity" class="form-label">Identity Proof</label>
+                            <input type="file" class="form-control" id="identity" accept=".pdf,.jpg,.jpeg,.png">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="certificate" class="form-label">Other Certificate</label>
+                            <input type="file" class="form-control" id="certificate" accept=".pdf,.jpg,.jpeg,.png">
+                        </div>
+                    </div>
+
+                    <div class="form-divider"></div>
+
+                    <div class="form-section-title">
+                        <span>05</span>
+                        <div>
+                            <h3>Declaration</h3>
+                            <p>Please confirm the following details.</p>
+                        </div>
+                    </div>
+
+                    <div class="declaration-box">
+                        <div class="form-check mb-3">
+                            <input class="form-check-input" type="checkbox" id="declaration" required>
+                            <label class="form-check-label" for="declaration">
+                                I declare that all the information provided above is true and correct to the best of my knowledge.
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="updates">
+                            <label class="form-check-label" for="updates">
+                                I would like to receive admission updates and notifications.
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="d-flex flex-wrap gap-3 justify-content-end mt-4">
+                        <button type="reset" class="btn btn-reset">Reset Form</button>
+                        <button type="submit" class="btn btn-primary-custom">Submit Application →</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-section section-padding" id="about">
+        <div class="container">
+            <div class="row align-items-center g-4">
+                <div class="col-lg-6">
+                    <span class="about-tag">ABOUT OUR INSTITUTION</span>
+                    <h2>Learning Today,<br><span>Leading Tomorrow.</span></h2>
+                    <p>We believe in providing quality education and creating an environment where students can develop their knowledge, skills and confidence.</p>
+                    <p>Our academic programs are designed to prepare students for future opportunities and professional success.</p>
+                    <a href="#admission" class="btn btn-primary-custom">Join Our Community</a>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about-cards">
+                        <div class="about-card"><span>🎓</span><h3>Quality Education</h3><p>Learn through structured academic programs.</p></div>
+                        <div class="about-card"><span>👩‍🏫</span><h3>Expert Faculty</h3><p>Get guidance from experienced educators.</p></div>
+                        <div class="about-card"><span>💡</span><h3>Skill Development</h3><p>Build skills for your future career.</p></div>
+                        <div class="about-card"><span>🌟</span><h3>Student Growth</h3><p>Explore your interests and abilities.</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-5">
+                    <a href="#home" class="footer-brand">Edu<span>Portal.</span></a>
+                    <p>Your journey towards a brighter future begins here. Learn, grow and achieve your dreams with us.</p>
+                </div>
+                <div class="col-md-3">
+                    <h3>Quick Links</h3>
+                    <a href="#home">Home</a>
+                    <a href="#about">About Us</a>
+                    <a href="#admission">Admission</a>
+                </div>
+                <div class="col-md-4">
+                    <h3>Contact Information</h3>
+                    <p>✉ admissions@eduportal.com</p>
+                    <p>☎ +91 98765 43210</p>
+                    <p>⌖ India</p>
+                </div>
+            </div>
+            <div class="copyright">© 2026 EduPortal. All Rights Reserved.</div>
+        </div>
+    </footer>
+
+    <script>
+        const admissionForm = document.getElementById("admissionForm");
+
+        admissionForm.addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            if (!admissionForm.checkValidity()) {
+                admissionForm.reportValidity();
+                return;
+            }
+
+            alert("Your admission application has been submitted successfully!");
+            admissionForm.reset();
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

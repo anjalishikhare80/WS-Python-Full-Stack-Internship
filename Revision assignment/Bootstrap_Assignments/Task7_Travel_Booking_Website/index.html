@@ -1,0 +1,587 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WanderWorld | Travel Booking</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="#home">✈ WanderWorld</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNavbar">
+            <ul class="navbar-nav ms-auto align-items-lg-center">
+                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#destinations">Destinations</a></li>
+                <li class="nav-item"><a class="nav-link" href="#booking">Book a Trip</a></li>
+                <li class="nav-item"><a class="nav-link" href="#faqs">FAQs</a></li>
+                <li class="nav-item ms-lg-3">
+                    <a class="btn btn-warning rounded-pill px-4" href="#booking">Book Now</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<section id="home" class="hero-section">
+    <div id="travelCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#travelCarousel" data-bs-slide-to="0" class="active" aria-current="true"></button>
+            <button type="button" data-bs-target="#travelCarousel" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#travelCarousel" data-bs-slide-to="2"></button>
+        </div>
+
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1800&q=85" class="d-block w-100 hero-slide" alt="Beautiful mountain lake">
+                <div class="carousel-caption">
+                    <span class="hero-label">DISCOVER THE WORLD</span>
+                    <h1>Explore Beautiful Places</h1>
+                    <p>Discover amazing destinations and create unforgettable memories.</p>
+                    <a href="#destinations" class="btn btn-warning btn-lg rounded-pill px-4">Explore Destinations</a>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?auto=format&fit=crop&w=1800&q=85" class="d-block w-100 hero-slide" alt="Beautiful coastal village">
+                <div class="carousel-caption">
+                    <span class="hero-label">YOUR NEXT ADVENTURE</span>
+                    <h1>Travel Beyond Limits</h1>
+                    <p>Find your perfect getaway and enjoy every moment of your journey.</p>
+                    <a href="#booking" class="btn btn-warning btn-lg rounded-pill px-4">Plan Your Trip</a>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=1800&q=85" class="d-block w-100 hero-slide" alt="Peaceful nature destination">
+                <div class="carousel-caption">
+                    <span class="hero-label">MAKE MEMORIES</span>
+                    <h1>Experience Something New</h1>
+                    <p>From peaceful nature escapes to exciting city adventures.</p>
+                    <a href="#destinations" class="btn btn-warning btn-lg rounded-pill px-4">Find Your Destination</a>
+                </div>
+            </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#travelCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#travelCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</section>
+
+<section class="search-section">
+    <div class="container">
+        <div class="search-card">
+            <div class="row align-items-center g-3">
+                <div class="col-lg-3 col-md-6">
+                    <label for="quickDestination" class="form-label">Destination</label>
+                    <select class="form-select" id="quickDestination">
+                        <option value="">Choose destination</option>
+                        <option>Goa</option>
+                        <option>Manali</option>
+                        <option>Jaipur</option>
+                        <option>Kerala</option>
+                        <option>Paris</option>
+                        <option>Bali</option>
+                    </select>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <label for="quickDate" class="form-label">Travel Date</label>
+                    <input type="date" class="form-control" id="quickDate">
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <label for="quickTravelers" class="form-label">Travelers</label>
+                    <select class="form-select" id="quickTravelers">
+                        <option>1 Person</option>
+                        <option selected>2 People</option>
+                        <option>3 People</option>
+                        <option>4 People</option>
+                        <option>5+ People</option>
+                    </select>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <label class="form-label d-block">&nbsp;</label>
+                    <button class="btn btn-primary w-100" id="searchTrip">Search Trips</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="about-section section-padding">
+    <div class="container">
+        <div class="row align-items-center g-5">
+            <div class="col-lg-6">
+                <img src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1000&q=85" class="img-fluid about-image" alt="Travel planning">
+            </div>
+            <div class="col-lg-6">
+                <span class="section-label">ABOUT WANDERWORLD</span>
+                <h2 class="section-title">Make Every Journey Special</h2>
+                <p class="section-description">WanderWorld helps you discover exciting destinations, plan your holidays and enjoy memorable travel experiences. Find inspiration for your next adventure and make your travel dreams come true.</p>
+                <div class="row g-3 mt-3">
+                    <div class="col-6">
+                        <div class="about-feature">
+                            <h3>150+</h3>
+                            <p>Destinations</p>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="about-feature">
+                            <h3>5K+</h3>
+                            <p>Happy Travelers</p>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="about-feature">
+                            <h3>24/7</h3>
+                            <p>Travel Support</p>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="about-feature">
+                            <h3>100%</h3>
+                            <p>Travel Assistance</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="destinations-section section-padding" id="destinations">
+    <div class="container">
+        <div class="section-heading text-center">
+            <span class="section-label">POPULAR PLACES</span>
+            <h2 class="section-title">Explore Top Destinations</h2>
+            <p class="section-description">Choose your next holiday destination from our popular travel collections.</p>
+        </div>
+
+        <div class="row g-4 mt-3">
+
+            <div class="col-md-6 col-lg-4">
+                <div class="card destination-card h-100">
+                    <div class="destination-image">
+                        <img src="https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=800&q=85" class="card-img-top" alt="Goa beach">
+                        <span class="destination-tag">Popular</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between">
+                            <h5 class="card-title">Goa, India</h5>
+                            <span class="rating">★ 4.8</span>
+                        </div>
+                        <p class="card-text">Enjoy beautiful beaches, exciting nightlife and relaxing coastal views.</p>
+                        <div class="destination-bottom">
+                            <strong>₹8,999 <small>/ person</small></strong>
+                            <button class="btn btn-outline-primary btn-sm book-destination" data-destination="Goa">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="card destination-card h-100">
+                    <div class="destination-image">
+                        <img src="https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?auto=format&fit=crop&w=800&q=85" class="card-img-top" alt="Manali mountains">
+                        <span class="destination-tag">Trending</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between">
+                            <h5 class="card-title">Manali, India</h5>
+                            <span class="rating">★ 4.9</span>
+                        </div>
+                        <p class="card-text">Explore snow-covered mountains, valleys and beautiful landscapes.</p>
+                        <div class="destination-bottom">
+                            <strong>₹12,499 <small>/ person</small></strong>
+                            <button class="btn btn-outline-primary btn-sm book-destination" data-destination="Manali">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="card destination-card h-100">
+                    <div class="destination-image">
+                        <img src="https://images.unsplash.com/photo-1599661046827-dacff0c0f09a?auto=format&fit=crop&w=800&q=85" class="card-img-top" alt="Jaipur palace">
+                        <span class="destination-tag">Heritage</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between">
+                            <h5 class="card-title">Jaipur, India</h5>
+                            <span class="rating">★ 4.7</span>
+                        </div>
+                        <p class="card-text">Discover royal palaces, historic forts and colourful markets.</p>
+                        <div class="destination-bottom">
+                            <strong>₹6,999 <small>/ person</small></strong>
+                            <button class="btn btn-outline-primary btn-sm book-destination" data-destination="Jaipur">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="card destination-card h-100">
+                    <div class="destination-image">
+                        <img src="https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&w=800&q=85" class="card-img-top" alt="Kerala backwaters">
+                        <span class="destination-tag">Nature</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between">
+                            <h5 class="card-title">Kerala, India</h5>
+                            <span class="rating">★ 4.8</span>
+                        </div>
+                        <p class="card-text">Experience peaceful backwaters, green hills and natural beauty.</p>
+                        <div class="destination-bottom">
+                            <strong>₹10,999 <small>/ person</small></strong>
+                            <button class="btn btn-outline-primary btn-sm book-destination" data-destination="Kerala">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="card destination-card h-100">
+                    <div class="destination-image">
+                        <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=800&q=85" class="card-img-top" alt="Paris city">
+                        <span class="destination-tag">International</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between">
+                            <h5 class="card-title">Paris, France</h5>
+                            <span class="rating">★ 4.9</span>
+                        </div>
+                        <p class="card-text">Visit iconic landmarks, beautiful streets and famous attractions.</p>
+                        <div class="destination-bottom">
+                            <strong>₹69,999 <small>/ person</small></strong>
+                            <button class="btn btn-outline-primary btn-sm book-destination" data-destination="Paris">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="card destination-card h-100">
+                    <div class="destination-image">
+                        <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=800&q=85" class="card-img-top" alt="Bali tropical destination">
+                        <span class="destination-tag">Adventure</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between">
+                            <h5 class="card-title">Bali, Indonesia</h5>
+                            <span class="rating">★ 4.8</span>
+                        </div>
+                        <p class="card-text">Enjoy tropical beaches, temples and amazing island experiences.</p>
+                        <div class="destination-bottom">
+                            <strong>₹39,999 <small>/ person</small></strong>
+                            <button class="btn btn-outline-primary btn-sm book-destination" data-destination="Bali">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="booking-section section-padding" id="booking">
+    <div class="container">
+        <div class="row align-items-center g-5">
+            <div class="col-lg-5">
+                <span class="section-label">START YOUR JOURNEY</span>
+                <h2 class="section-title">Book Your Dream Holiday</h2>
+                <p class="section-description">Fill in your travel details and send us your booking request. Our travel team will help you plan your journey.</p>
+                <div class="booking-benefit">
+                    <span>✓</span>
+                    <p>Easy booking process</p>
+                </div>
+                <div class="booking-benefit">
+                    <span>✓</span>
+                    <p>Multiple destinations to choose from</p>
+                </div>
+                <div class="booking-benefit">
+                    <span>✓</span>
+                    <p>Friendly travel assistance</p>
+                </div>
+            </div>
+
+            <div class="col-lg-7">
+                <div class="booking-card">
+                    <h3>Plan Your Trip</h3>
+                    <p>Enter your details below</p>
+
+                    <form id="bookingForm">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label for="fullName" class="form-label">Full Name</label>
+                                <input type="text" class="form-control" id="fullName" placeholder="Enter your name" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="email" class="form-label">Email Address</label>
+                                <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="phone" class="form-label">Phone Number</label>
+                                <input type="tel" class="form-control" id="phone" placeholder="Enter phone number" pattern="[0-9]{10}" maxlength="10" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="destination" class="form-label">Destination</label>
+                                <select class="form-select" id="destination" required>
+                                    <option value="">Select destination</option>
+                                    <option>Goa</option>
+                                    <option>Manali</option>
+                                    <option>Jaipur</option>
+                                    <option>Kerala</option>
+                                    <option>Paris</option>
+                                    <option>Bali</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="travelDate" class="form-label">Travel Date</label>
+                                <input type="date" class="form-control" id="travelDate" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="travelers" class="form-label">Number of Travelers</label>
+                                <select class="form-select" id="travelers" required>
+                                    <option value="">Select travelers</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                    <option>6 or more</option>
+                                </select>
+                            </div>
+                            <div class="col-12">
+                                <label for="message" class="form-label">Additional Message</label>
+                                <textarea class="form-control" id="message" rows="3" placeholder="Tell us about your travel preferences"></textarea>
+                            </div>
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-primary w-100 btn-lg">Submit Booking Request</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="faq-section section-padding" id="faqs">
+    <div class="container">
+        <div class="section-heading text-center mb-5">
+            <span class="section-label">HAVE QUESTIONS?</span>
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <p class="section-description">Find answers to common questions about your travel bookings.</p>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-lg-9">
+                <div class="accordion" id="faqAccordion">
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqOne">
+                                How can I book a trip?
+                            </button>
+                        </h2>
+                        <div id="faqOne" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Choose your favourite destination, complete the booking form and submit your travel request.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqTwo">
+                                Can I change my travel date?
+                            </button>
+                        </h2>
+                        <div id="faqTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                You can contact the travel support team to discuss changing your travel date.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqThree">
+                                Are international destinations available?
+                            </button>
+                        </h2>
+                        <div id="faqThree" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Yes. This sample website includes international destinations such as Paris and Bali.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqFour">
+                                How many people can I include in a booking?
+                            </button>
+                        </h2>
+                        <div id="faqFour" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                You can select the number of travelers in the booking form, including groups of six or more.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqFive">
+                                Is my booking confirmed immediately?
+                            </button>
+                        </h2>
+                        <div id="faqFive" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                No. This demonstration form displays a request confirmation. It does not make a real reservation.
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="newsletter-section py-5">
+    <div class="container text-center">
+        <h2>Get Travel Inspiration</h2>
+        <p>Stay updated with exciting destinations and travel ideas.</p>
+        <form id="newsletterForm" class="newsletter-form mx-auto">
+            <div class="input-group">
+                <input type="email" class="form-control" placeholder="Enter your email address" required>
+                <button class="btn btn-warning" type="submit">Subscribe</button>
+            </div>
+        </form>
+    </div>
+</section>
+
+<footer class="footer-section">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-lg-4">
+                <h4>✈ WanderWorld</h4>
+                <p>Discover the world, explore new destinations and create memories that last forever.</p>
+            </div>
+            <div class="col-6 col-lg-2">
+                <h5>Quick Links</h5>
+                <a href="#home">Home</a>
+                <a href="#destinations">Destinations</a>
+                <a href="#booking">Book a Trip</a>
+                <a href="#faqs">FAQs</a>
+            </div>
+            <div class="col-6 col-lg-3">
+                <h5>Popular Places</h5>
+                <a href="#destinations">Goa</a>
+                <a href="#destinations">Manali</a>
+                <a href="#destinations">Paris</a>
+                <a href="#destinations">Bali</a>
+            </div>
+            <div class="col-lg-3">
+                <h5>Contact Us</h5>
+                <p>✉ hello@wanderworld.com</p>
+                <p>☎ +91 98765 43210</p>
+                <p>📍 India</p>
+            </div>
+        </div>
+        <div class="footer-bottom text-center">
+            <p class="mb-0">© 2026 WanderWorld. All Rights Reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<div class="modal fade" id="bookingSuccessModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content success-modal">
+            <div class="modal-body text-center p-5">
+                <div class="success-icon">✓</div>
+                <h3 id="successModalLabel">Booking Request Submitted!</h3>
+                <p id="successMessage">Thank you for choosing WanderWorld. Your travel request has been received.</p>
+                <button type="button" class="btn btn-primary px-4" data-bs-dismiss="modal">Continue</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    const today = new Date().toISOString().split("T")[0];
+
+    document.getElementById("travelDate").min = today;
+    document.getElementById("quickDate").min = today;
+
+    document.getElementById("searchTrip").addEventListener("click", function () {
+        const destination = document.getElementById("quickDestination").value;
+        const date = document.getElementById("quickDate").value;
+        const travelers = document.getElementById("quickTravelers").value;
+
+        if (!destination) {
+            alert("Please select a destination.");
+            return;
+        }
+
+        document.getElementById("destination").value = destination;
+
+        if (date) {
+            document.getElementById("travelDate").value = date;
+        }
+
+        const travelerSelect = document.getElementById("travelers");
+        if (travelers === "5+ People") {
+            travelerSelect.value = "6 or more";
+        } else {
+            travelerSelect.value = travelers.split(" ")[0];
+        }
+
+        document.getElementById("booking").scrollIntoView({ behavior: "smooth" });
+    });
+
+    document.querySelectorAll(".book-destination").forEach(function (button) {
+        button.addEventListener("click", function () {
+            document.getElementById("destination").value = this.dataset.destination;
+            document.getElementById("booking").scrollIntoView({ behavior: "smooth" });
+        });
+    });
+
+    document.getElementById("bookingForm").addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        const name = document.getElementById("fullName").value;
+        const destination = document.getElementById("destination").value;
+
+        document.getElementById("successMessage").textContent =
+            "Thank you, " + name + "! Your booking request for " + destination + " has been submitted.";
+
+        const successModal = new bootstrap.Modal(document.getElementById("bookingSuccessModal"));
+        successModal.show();
+
+        this.reset();
+    });
+
+    document.getElementById("newsletterForm").addEventListener("submit", function (event) {
+        event.preventDefault();
+        alert("Thank you for subscribing to WanderWorld!");
+        this.reset();
+    });
+</script>
+
+</body>
+</html>

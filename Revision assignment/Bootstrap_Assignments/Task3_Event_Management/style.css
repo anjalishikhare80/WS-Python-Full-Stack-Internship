@@ -1,0 +1,264 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #25243a;
+    background-color: #f8f9fc;
+}
+
+.navbar {
+    background: #17152f;
+    padding: 15px 0;
+}
+
+.navbar-brand {
+    font-size: 27px;
+    color: #ffffff;
+}
+
+.nav-link {
+    color: #ffffff !important;
+    margin: 0 9px;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    color: #ffca5c !important;
+}
+
+.hero-section {
+    min-height: 650px;
+    display: flex;
+    align-items: center;
+    padding: 120px 0 70px;
+    background: linear-gradient(90deg, rgba(20, 18, 49, 0.95), rgba(20, 18, 49, 0.55)), url("https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=1800&q=85");
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.hero-section h1 {
+    font-size: 58px;
+    font-weight: 800;
+    max-width: 650px;
+    margin-bottom: 20px;
+}
+
+.hero-section h1 span {
+    color: #ffc857;
+}
+
+.hero-section p {
+    font-size: 18px;
+    line-height: 1.8;
+    max-width: 550px;
+    margin-bottom: 30px;
+    color: #eeeeee;
+}
+
+.btn-primary {
+    background-color: #635bdb;
+    border-color: #635bdb;
+}
+
+.btn-primary:hover {
+    background-color: #4941bd;
+    border-color: #4941bd;
+}
+
+.section-heading span,
+.about-section span {
+    color: #635bdb;
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-size: 13px;
+}
+
+.section-heading h2,
+.about-section h2 {
+    font-size: 36px;
+    font-weight: 800;
+    margin-top: 10px;
+}
+
+.section-heading p {
+    color: #777;
+}
+
+.carousel-item img {
+    height: 420px;
+    object-fit: cover;
+    filter: brightness(65%);
+}
+
+.carousel-caption {
+    bottom: 65px;
+}
+
+.carousel-caption h3 {
+    font-size: 34px;
+    font-weight: 700;
+}
+
+.carousel-caption p {
+    font-size: 17px;
+}
+
+.event-card {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    background: white;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.07);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.event-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.13);
+}
+
+.event-card .card-img-top {
+    height: 220px;
+    object-fit: cover;
+}
+
+.event-card .card-body {
+    padding: 22px;
+}
+
+.event-card .card-title {
+    font-size: 21px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.event-card .card-text {
+    color: #777;
+    line-height: 1.6;
+    min-height: 75px;
+}
+
+.event-info {
+    border-top: 1px solid #eeeeee;
+    padding-top: 13px;
+}
+
+.event-info p {
+    margin-bottom: 8px;
+    color: #555;
+    font-size: 14px;
+}
+
+.event-price {
+    color: #635bdb;
+    font-size: 21px;
+}
+
+.about-section {
+    background: #eeedff;
+}
+
+.about-section p {
+    max-width: 750px;
+    color: #666;
+    font-size: 17px;
+    line-height: 1.8;
+    margin-top: 20px;
+}
+
+footer {
+    background: #17152f;
+    color: white;
+}
+
+.modal-content {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.modal-header {
+    background: #635bdb;
+    color: white;
+}
+
+.modal-header .btn-close {
+    filter: brightness(0) invert(1);
+}
+
+.form-control {
+    padding: 11px;
+}
+
+.form-control:focus {
+    border-color: #635bdb;
+    box-shadow: 0 0 0 0.2rem rgba(99, 91, 219, 0.15);
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        min-height: 580px;
+        text-align: center;
+    }
+
+    .hero-section h1 {
+        font-size: 40px;
+    }
+
+    .hero-section p {
+        font-size: 16px;
+    }
+
+    .carousel-item img {
+        height: 280px;
+    }
+
+    .carousel-caption {
+        bottom: 25px;
+    }
+
+    .carousel-caption h3 {
+        font-size: 22px;
+    }
+
+    .carousel-caption p {
+        font-size: 13px;
+    }
+
+    .section-heading h2,
+    .about-section h2 {
+        font-size: 29px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-section h1 {
+        font-size: 34px;
+    }
+
+    .hero-section .btn {
+        margin: 5px;
+    }
+
+    .carousel-item img {
+        height: 230px;
+    }
+
+    .carousel-caption h3 {
+        font-size: 18px;
+    }
+
+    .carousel-caption p {
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,585 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LearnHub | Online Learning Portal</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+    <div class="container-fluid px-lg-5">
+        <a class="navbar-brand" href="#home">
+            <span class="brand-icon">L</span> LearnHub
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNavbar">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item"><a class="nav-link active" href="#home">Dashboard</a></li>
+                <li class="nav-item"><a class="nav-link" href="#courses">My Courses</a></li>
+                <li class="nav-item"><a class="nav-link" href="#instructors">Instructors</a></li>
+                <li class="nav-item"><a class="nav-link" href="#learning">Learning Progress</a></li>
+            </ul>
+
+            <div class="navbar-profile">
+                <button class="notification-btn" type="button" aria-label="Notifications">♧<span></span></button>
+                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80" alt="Student profile">
+                <div>
+                    <strong>Anjali Sharma</strong>
+                    <small>Student</small>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<main class="container-fluid dashboard-container px-lg-5" id="home">
+
+    <section class="welcome-section">
+        <div>
+            <span class="welcome-label">STUDENT DASHBOARD</span>
+            <h1>Welcome back, Anjali! 👋</h1>
+            <p>Continue your learning journey and achieve your goals.</p>
+        </div>
+        <a href="#courses" class="btn btn-primary explore-btn">Explore Courses</a>
+    </section>
+
+    <section class="row g-4 stats-section">
+        <div class="col-6 col-xl-3">
+            <div class="stat-card">
+                <div class="stat-icon purple-icon">▣</div>
+                <div>
+                    <p>Enrolled Courses</p>
+                    <h3>08</h3>
+                    <span class="stat-note">Courses in progress</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-6 col-xl-3">
+            <div class="stat-card">
+                <div class="stat-icon green-icon">✓</div>
+                <div>
+                    <p>Completed</p>
+                    <h3>05</h3>
+                    <span class="stat-note">Successfully finished</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-6 col-xl-3">
+            <div class="stat-card">
+                <div class="stat-icon orange-icon">◷</div>
+                <div>
+                    <p>Learning Hours</p>
+                    <h3>42</h3>
+                    <span class="stat-note">Hours spent learning</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-6 col-xl-3">
+            <div class="stat-card">
+                <div class="stat-icon blue-icon">★</div>
+                <div>
+                    <p>Certificates</p>
+                    <h3>03</h3>
+                    <span class="stat-note">Certificates earned</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="courses-section" id="courses">
+        <div class="section-heading">
+            <div>
+                <span class="section-label">YOUR LEARNING SPACE</span>
+                <h2>My Courses</h2>
+                <p>Pick up where you left off and keep learning.</p>
+            </div>
+            <a href="#courses" class="view-link">View All Courses →</a>
+        </div>
+
+        <ul class="nav nav-pills course-tabs" id="courseTabs" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="all-tab" data-bs-toggle="pill" data-bs-target="#all-courses" type="button" role="tab">All Courses <span class="tab-count">6</span></button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="progress-tab" data-bs-toggle="pill" data-bs-target="#in-progress" type="button" role="tab">In Progress</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="completed-tab" data-bs-toggle="pill" data-bs-target="#completed-courses" type="button" role="tab">Completed</button>
+            </li>
+        </ul>
+
+        <div class="tab-content" id="courseTabContent">
+
+            <div class="tab-pane fade show active" id="all-courses" role="tabpanel">
+                <div class="row g-4">
+
+                    <div class="col-md-6 col-xl-4">
+                        <div class="card course-card h-100">
+                            <div class="course-banner web-banner">
+                                <span class="course-symbol">🌐</span>
+                                <span class="badge course-badge">Popular</span>
+                            </div>
+                            <div class="card-body">
+                                <div class="course-meta">
+                                    <span>Web Development</span>
+                                    <span class="level-badge">Beginner</span>
+                                </div>
+                                <h5 class="card-title">Complete HTML & CSS</h5>
+                                <p class="course-description">Learn to build beautiful and responsive websites from scratch.</p>
+                                <div class="instructor-info">
+                                    <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=100&q=80" alt="Instructor Rahul">
+                                    <div>
+                                        <strong>Rahul Mehta</strong>
+                                        <small>Course Instructor</small>
+                                    </div>
+                                </div>
+                                <div class="progress-heading">
+                                    <span>Your Progress</span>
+                                    <strong>75%</strong>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar bg-purple" style="width: 75%"></div>
+                                </div>
+                                <div class="course-footer">
+                                    <span>15 of 20 lessons</span>
+                                    <button class="btn btn-primary btn-sm course-details-btn" data-title="Complete HTML & CSS" data-category="Web Development" data-instructor="Rahul Mehta" data-duration="8 Weeks" data-lessons="20 Lessons" data-description="Learn HTML structure, CSS styling, responsive layouts, Flexbox and Grid to create modern websites.">Continue Learning</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-xl-4">
+                        <div class="card course-card h-100">
+                            <div class="course-banner python-banner">
+                                <span class="course-symbol">🐍</span>
+                                <span class="badge course-badge">Trending</span>
+                            </div>
+                            <div class="card-body">
+                                <div class="course-meta">
+                                    <span>Programming</span>
+                                    <span class="level-badge">Intermediate</span>
+                                </div>
+                                <h5 class="card-title">Python Programming</h5>
+                                <p class="course-description">Understand Python basics, functions, loops and object-oriented programming.</p>
+                                <div class="instructor-info">
+                                    <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=100&q=80" alt="Instructor Priya">
+                                    <div>
+                                        <strong>Priya Desai</strong>
+                                        <small>Course Instructor</small>
+                                    </div>
+                                </div>
+                                <div class="progress-heading">
+                                    <span>Your Progress</span>
+                                    <strong>60%</strong>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar bg-success" style="width: 60%"></div>
+                                </div>
+                                <div class="course-footer">
+                                    <span>12 of 20 lessons</span>
+                                    <button class="btn btn-primary btn-sm course-details-btn" data-title="Python Programming" data-category="Programming" data-instructor="Priya Desai" data-duration="10 Weeks" data-lessons="20 Lessons" data-description="Learn Python syntax, variables, data types, loops, functions, object-oriented programming and practical coding exercises.">Continue Learning</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-xl-4">
+                        <div class="card course-card h-100">
+                            <div class="course-banner data-banner">
+                                <span class="course-symbol">📊</span>
+                                <span class="badge course-badge">New</span>
+                            </div>
+                            <div class="card-body">
+                                <div class="course-meta">
+                                    <span>Data Science</span>
+                                    <span class="level-badge">Beginner</span>
+                                </div>
+                                <h5 class="card-title">Data Science Fundamentals</h5>
+                                <p class="course-description">Explore data analysis, visualization and essential data science concepts.</p>
+                                <div class="instructor-info">
+                                    <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=100&q=80" alt="Instructor Amit">
+                                    <div>
+                                        <strong>Amit Kulkarni</strong>
+                                        <small>Course Instructor</small>
+                                    </div>
+                                </div>
+                                <div class="progress-heading">
+                                    <span>Your Progress</span>
+                                    <strong>35%</strong>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar bg-warning" style="width: 35%"></div>
+                                </div>
+                                <div class="course-footer">
+                                    <span>7 of 20 lessons</span>
+                                    <button class="btn btn-primary btn-sm course-details-btn" data-title="Data Science Fundamentals" data-category="Data Science" data-instructor="Amit Kulkarni" data-duration="12 Weeks" data-lessons="20 Lessons" data-description="Discover data analysis, data cleaning, visualization, statistics and the fundamentals of working with datasets.">Continue Learning</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-xl-4">
+                        <div class="card course-card h-100">
+                            <div class="course-banner js-banner">
+                                <span class="course-symbol">⚡</span>
+                                <span class="badge course-badge">Popular</span>
+                            </div>
+                            <div class="card-body">
+                                <div class="course-meta">
+                                    <span>Web Development</span>
+                                    <span class="level-badge">Intermediate</span>
+                                </div>
+                                <h5 class="card-title">JavaScript Essentials</h5>
+                                <p class="course-description">Make your websites interactive with modern JavaScript concepts.</p>
+                                <div class="instructor-info">
+                                    <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=100&q=80" alt="Instructor Rahul">
+                                    <div>
+                                        <strong>Rahul Mehta</strong>
+                                        <small>Course Instructor</small>
+                                    </div>
+                                </div>
+                                <div class="progress-heading">
+                                    <span>Your Progress</span>
+                                    <strong>20%</strong>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar bg-info" style="width: 20%"></div>
+                                </div>
+                                <div class="course-footer">
+                                    <span>4 of 20 lessons</span>
+                                    <button class="btn btn-primary btn-sm course-details-btn" data-title="JavaScript Essentials" data-category="Web Development" data-instructor="Rahul Mehta" data-duration="8 Weeks" data-lessons="20 Lessons" data-description="Learn JavaScript variables, functions, arrays, objects, DOM manipulation and event handling to create interactive web pages.">Continue Learning</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-xl-4">
+                        <div class="card course-card h-100">
+                            <div class="course-banner ui-banner">
+                                <span class="course-symbol">🎨</span>
+                                <span class="badge course-badge completed-badge">Completed</span>
+                            </div>
+                            <div class="card-body">
+                                <div class="course-meta">
+                                    <span>Design</span>
+                                    <span class="level-badge">Beginner</span>
+                                </div>
+                                <h5 class="card-title">UI/UX Design Basics</h5>
+                                <p class="course-description">Learn design principles and create user-friendly digital experiences.</p>
+                                <div class="instructor-info">
+                                    <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=100&q=80" alt="Instructor Priya">
+                                    <div>
+                                        <strong>Priya Desai</strong>
+                                        <small>Course Instructor</small>
+                                    </div>
+                                </div>
+                                <div class="progress-heading">
+                                    <span>Your Progress</span>
+                                    <strong>100%</strong>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar bg-success" style="width: 100%"></div>
+                                </div>
+                                <div class="course-footer">
+                                    <span>20 of 20 lessons</span>
+                                    <button class="btn btn-outline-success btn-sm course-details-btn" data-title="UI/UX Design Basics" data-category="Design" data-instructor="Priya Desai" data-duration="6 Weeks" data-lessons="20 Lessons" data-description="Understand user research, wireframes, prototypes, visual hierarchy and essential UI/UX design principles.">View Details</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-xl-4">
+                        <div class="card course-card h-100">
+                            <div class="course-banner sql-banner">
+                                <span class="course-symbol">🗄️</span>
+                                <span class="badge course-badge completed-badge">Completed</span>
+                            </div>
+                            <div class="card-body">
+                                <div class="course-meta">
+                                    <span>Database</span>
+                                    <span class="level-badge">Beginner</span>
+                                </div>
+                                <h5 class="card-title">SQL Database Mastery</h5>
+                                <p class="course-description">Learn to create databases, write queries and manage information.</p>
+                                <div class="instructor-info">
+                                    <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=100&q=80" alt="Instructor Amit">
+                                    <div>
+                                        <strong>Amit Kulkarni</strong>
+                                        <small>Course Instructor</small>
+                                    </div>
+                                </div>
+                                <div class="progress-heading">
+                                    <span>Your Progress</span>
+                                    <strong>100%</strong>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar bg-success" style="width: 100%"></div>
+                                </div>
+                                <div class="course-footer">
+                                    <span>18 of 18 lessons</span>
+                                    <button class="btn btn-outline-success btn-sm course-details-btn" data-title="SQL Database Mastery" data-category="Database" data-instructor="Amit Kulkarni" data-duration="6 Weeks" data-lessons="18 Lessons" data-description="Learn SQL queries, database creation, filtering, joins, grouping and database management.">View Details</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="in-progress" role="tabpanel">
+                <div class="row g-4">
+                    <div class="col-12">
+                        <div class="tab-info">
+                            <h5>Keep going!</h5>
+                            <p>Your four active courses are displayed in the All Courses section above. Select a course to continue learning.</p>
+                            <button class="btn btn-primary btn-sm" id="showAllCourses">View All Courses</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="completed-courses" role="tabpanel">
+                <div class="row g-4">
+                    <div class="col-12">
+                        <div class="tab-info">
+                            <h5>Congratulations on your progress!</h5>
+                            <p>Your completed courses include UI/UX Design Basics and SQL Database Mastery.</p>
+                            <button class="btn btn-primary btn-sm" id="showCompletedCourses">View Completed Courses</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="learning-section" id="learning">
+        <div class="row g-4">
+            <div class="col-lg-7">
+                <div class="learning-card h-100">
+                    <div class="section-heading">
+                        <div>
+                            <span class="section-label">YOUR ACHIEVEMENTS</span>
+                            <h2>Learning Progress</h2>
+                            <p>Track your overall learning performance.</p>
+                        </div>
+                        <span class="badge overall-badge">This Month</span>
+                    </div>
+
+                    <div class="overall-progress">
+                        <div class="overall-progress-info">
+                            <div>
+                                <h3>68%</h3>
+                                <p>Overall Course Completion</p>
+                            </div>
+                            <span class="progress-emoji">🏆</span>
+                        </div>
+                        <div class="progress overall-bar">
+                            <div class="progress-bar bg-purple" style="width: 68%"></div>
+                        </div>
+                        <p class="progress-caption">Great work! Keep learning to reach your next milestone.</p>
+                    </div>
+
+                    <div class="learning-stats">
+                        <div>
+                            <strong>42 hrs</strong>
+                            <span>Learning Time</span>
+                        </div>
+                        <div>
+                            <strong>05</strong>
+                            <span>Courses Completed</span>
+                        </div>
+                        <div>
+                            <strong>12</strong>
+                            <span>Lessons This Week</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-5" id="instructors">
+                <div class="learning-card h-100">
+                    <div class="section-heading">
+                        <div>
+                            <span class="section-label">LEARN FROM EXPERTS</span>
+                            <h2>Your Instructors</h2>
+                            <p>Meet your course mentors.</p>
+                        </div>
+                    </div>
+
+                    <div class="instructor-list">
+                        <div class="instructor-item">
+                            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=100&q=80" alt="Rahul Mehta">
+                            <div>
+                                <strong>Rahul Mehta</strong>
+                                <span>Web Development</span>
+                            </div>
+                            <span class="instructor-rating">★ 4.9</span>
+                        </div>
+
+                        <div class="instructor-item">
+                            <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=100&q=80" alt="Priya Desai">
+                            <div>
+                                <strong>Priya Desai</strong>
+                                <span>Programming & Design</span>
+                            </div>
+                            <span class="instructor-rating">★ 4.8</span>
+                        </div>
+
+                        <div class="instructor-item">
+                            <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=100&q=80" alt="Amit Kulkarni">
+                            <div>
+                                <strong>Amit Kulkarni</strong>
+                                <span>Data Science & SQL</span>
+                            </div>
+                            <span class="instructor-rating">★ 4.9</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="achievement-section">
+        <div class="section-heading">
+            <div>
+                <span class="section-label">KEEP IT UP</span>
+                <h2>Your Learning Badges</h2>
+                <p>Celebrate your learning milestones.</p>
+            </div>
+        </div>
+
+        <div class="row g-3">
+            <div class="col-6 col-md-3">
+                <div class="achievement-card">
+                    <span>🔥</span>
+                    <strong>Quick Starter</strong>
+                    <small>Started your learning journey</small>
+                    <span class="badge bg-success">Earned</span>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="achievement-card">
+                    <span>🏆</span>
+                    <strong>Course Finisher</strong>
+                    <small>Completed your first course</small>
+                    <span class="badge bg-success">Earned</span>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="achievement-card">
+                    <span>⭐</span>
+                    <strong>Consistent Learner</strong>
+                    <small>Learned for seven days</small>
+                    <span class="badge bg-success">Earned</span>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="achievement-card locked-achievement">
+                    <span>🚀</span>
+                    <strong>Master Learner</strong>
+                    <small>Complete ten courses</small>
+                    <span class="badge bg-secondary">Locked</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="dashboard-footer">
+        <p>© 2026 LearnHub. Keep learning, keep growing.</p>
+        <span>Made for curious minds 💜</span>
+    </footer>
+
+</main>
+
+<div class="modal fade" id="courseDetailsModal" tabindex="-1" aria-labelledby="courseModalTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="courseModalTitle">Course Details</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <span class="badge text-bg-primary mb-3" id="modalCategory">Category</span>
+                <p id="modalDescription"></p>
+                <div class="modal-detail-row">
+                    <strong>Instructor</strong>
+                    <span id="modalInstructor"></span>
+                </div>
+                <div class="modal-detail-row">
+                    <strong>Duration</strong>
+                    <span id="modalDuration"></span>
+                </div>
+                <div class="modal-detail-row">
+                    <strong>Course Content</strong>
+                    <span id="modalLessons"></span>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Start Learning</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+    document.querySelectorAll(".course-details-btn").forEach(function (button) {
+        button.addEventListener("click", function () {
+            document.getElementById("courseModalTitle").textContent = this.dataset.title;
+            document.getElementById("modalCategory").textContent = this.dataset.category;
+            document.getElementById("modalDescription").textContent = this.dataset.description;
+            document.getElementById("modalInstructor").textContent = this.dataset.instructor;
+            document.getElementById("modalDuration").textContent = this.dataset.duration;
+            document.getElementById("modalLessons").textContent = this.dataset.lessons;
+
+            const modal = new bootstrap.Modal(document.getElementById("courseDetailsModal"));
+            modal.show();
+        });
+    });
+
+    document.getElementById("showAllCourses").addEventListener("click", function () {
+        bootstrap.Tab.getOrCreateInstance(document.getElementById("all-tab")).show();
+    });
+
+    document.getElementById("showCompletedCourses").addEventListener("click", function () {
+        bootstrap.Tab.getOrCreateInstance(document.getElementById("all-tab")).show();
+        setTimeout(function () {
+            document.querySelectorAll("#all-courses .course-card").forEach(function (card) {
+                card.closest(".col-md-6").style.display = card.querySelector(".completed-badge") ? "" : "none";
+            });
+        }, 100);
+    });
+
+    document.querySelectorAll("#courseTabs button").forEach(function (tab) {
+        tab.addEventListener("shown.bs.tab", function (event) {
+            if (event.target.id !== "all-tab") {
+                document.querySelectorAll("#all-courses .course-card").forEach(function (card) {
+                    card.closest(".col-md-6").style.display = "";
+                });
+            }
+        });
+    });
+
+    document.getElementById("all-tab").addEventListener("shown.bs.tab", function () {
+        document.querySelectorAll("#all-courses .course-card").forEach(function (card) {
+            card.closest(".col-md-6").style.display = "";
+        });
+    });
+</script>
+
+</body>
+</html>

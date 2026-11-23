@@ -1,0 +1,517 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+:root {
+    --primary: #6845d8;
+    --primary-dark: #4d2db5;
+    --light-purple: #f3efff;
+    --dark: #202039;
+    --text: #626276;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 85px;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    color: var(--dark);
+}
+
+.navbar {
+    background: #211b3c;
+    padding: 13px 0;
+}
+
+.navbar-brand,
+.footer-brand {
+    color: white;
+    font-size: 27px;
+    font-weight: 800;
+    letter-spacing: -1px;
+    text-decoration: none;
+}
+
+.navbar-brand span,
+.footer-brand span {
+    color: #ad94ff;
+}
+
+.nav-link {
+    color: #fff !important;
+    font-size: 13px;
+    margin: 0 10px;
+}
+
+.nav-link:hover {
+    color: #bba8ff !important;
+}
+
+.btn-primary-custom {
+    display: inline-block;
+    color: #fff;
+    background: var(--primary);
+    border: 1px solid var(--primary);
+    border-radius: 30px;
+    padding: 11px 23px;
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: .25s ease;
+}
+
+.btn-primary-custom:hover {
+    color: #fff;
+    background: var(--primary-dark);
+    border-color: var(--primary-dark);
+    transform: translateY(-2px);
+}
+
+.hero {
+    padding: 130px 0 55px;
+    background: linear-gradient(120deg, #f5f1ff, #e7ddff);
+    overflow: hidden;
+}
+
+.hero-tag,
+.about-tag {
+    display: inline-block;
+    padding: 7px 15px;
+    color: var(--primary);
+    background: #e5dcff;
+    border-radius: 30px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.hero h1 {
+    margin: 20px 0 15px;
+    color: #211b3c;
+    font-size: clamp(38px, 5vw, 57px);
+    line-height: 1.16;
+    font-weight: 800;
+    letter-spacing: -2px;
+}
+
+.hero h1 span,
+.about-section h2 span {
+    color: var(--primary);
+}
+
+.hero-content > p {
+    max-width: 570px;
+    color: var(--text);
+    font-size: 14px;
+    line-height: 1.9;
+    margin-bottom: 24px;
+}
+
+.hero-info {
+    display: flex;
+    gap: 30px;
+    margin-top: 32px;
+}
+
+.hero-info div {
+    display: flex;
+    flex-direction: column;
+    padding-right: 28px;
+    border-right: 1px solid #c7b8ec;
+}
+
+.hero-info div:last-child {
+    border: 0;
+}
+
+.hero-info strong {
+    color: var(--primary);
+    font-size: 23px;
+    font-weight: 800;
+}
+
+.hero-info small {
+    color: var(--text);
+    font-size: 11px;
+}
+
+.hero-illustration {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 350px;
+}
+
+.illustration-circle {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 290px;
+    height: 290px;
+    background: linear-gradient(135deg, #8c70ec, #5e3dc7);
+    border: 15px solid #ffffff80;
+    border-radius: 50%;
+    box-shadow: 0 20px 45px #5637a333;
+}
+
+.book-icon {
+    font-size: 105px;
+}
+
+.cap-icon {
+    position: absolute;
+    top: 28px;
+    right: 30px;
+    font-size: 55px;
+}
+
+.pencil-icon {
+    position: absolute;
+    bottom: 25px;
+    left: 35px;
+    font-size: 45px;
+}
+
+.floating-card {
+    position: absolute;
+    right: 0;
+    bottom: 35px;
+    padding: 15px 20px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px #25124d20;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.floating-card span {
+    color: var(--primary);
+    margin-right: 5px;
+}
+
+.section-padding {
+    padding: 65px 0;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.section-heading > span {
+    color: var(--primary);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.section-heading h2 {
+    margin: 8px 0;
+    color: #211b3c;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.section-heading p {
+    color: var(--text);
+    font-size: 13px;
+}
+
+.admission-section {
+    background: #faf9ff;
+}
+
+.form-container {
+    max-width: 950px;
+    margin: auto;
+    padding: 35px;
+    background: white;
+    border: 1px solid #eee9ff;
+    border-radius: 17px;
+    box-shadow: 0 10px 40px #4d2db50d;
+}
+
+.form-section-title {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 22px;
+}
+
+.form-section-title > span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    color: white;
+    background: var(--primary);
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.form-section-title h3 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.form-section-title p {
+    margin: 3px 0 0;
+    color: #888;
+    font-size: 11px;
+}
+
+.form-label {
+    color: #38344c;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 7px;
+}
+
+.form-control,
+.form-select {
+    min-height: 44px;
+    border: 1px solid #e3dff0;
+    border-radius: 8px;
+    font-size: 12px;
+    box-shadow: none !important;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: var(--primary);
+}
+
+textarea.form-control {
+    min-height: 90px;
+}
+
+.form-divider {
+    height: 1px;
+    margin: 30px 0;
+    background: #eeeaf7;
+}
+
+.declaration-box {
+    padding: 20px;
+    background: #f7f4ff;
+    border: 1px solid #e8e0ff;
+    border-radius: 10px;
+}
+
+.form-check-input:checked {
+    background-color: var(--primary);
+    border-color: var(--primary);
+}
+
+.form-check-label {
+    color: #55516a;
+    font-size: 12px;
+    line-height: 1.7;
+}
+
+.btn-reset {
+    padding: 10px 23px;
+    color: #55516a;
+    background: white;
+    border: 1px solid #dcd6eb;
+    border-radius: 30px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.btn-reset:hover {
+    color: var(--primary);
+    border-color: var(--primary);
+}
+
+.about-section {
+    background: #f3efff;
+}
+
+.about-section h2 {
+    margin: 17px 0;
+    color: #211b3c;
+    font-size: 37px;
+    font-weight: 800;
+}
+
+.about-section p {
+    color: var(--text);
+    font-size: 13px;
+    line-height: 1.9;
+}
+
+.about-section .btn {
+    margin-top: 10px;
+}
+
+.about-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.about-card {
+    padding: 22px 17px;
+    background: white;
+    border: 1px solid #e9e1ff;
+    border-radius: 13px;
+    transition: .25s ease;
+}
+
+.about-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px #4d2db515;
+}
+
+.about-card span {
+    font-size: 30px;
+}
+
+.about-card h3 {
+    margin: 12px 0 5px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.about-card p {
+    margin: 0;
+    font-size: 11px;
+}
+
+footer {
+    padding: 35px 0 0;
+    color: white;
+    background: #211b3c;
+}
+
+.footer-brand {
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+footer p,
+footer a:not(.footer-brand) {
+    color: #d5cfea;
+    font-size: 11px;
+    line-height: 1.9;
+}
+
+footer h3 {
+    margin: 10px 0;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+footer .col-md-3 a {
+    display: block;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #ad94ff !important;
+}
+
+.copyright {
+    margin-top: 25px;
+    padding: 14px 0;
+    border-top: 1px solid #51486d;
+    text-align: center;
+    color: #d5cfea;
+    font-size: 10px;
+}
+
+@media (max-width: 991px) {
+    .navbar-nav {
+        align-items: flex-start !important;
+        padding: 12px 0;
+    }
+
+    .nav-link {
+        margin: 5px 0;
+    }
+
+    .hero {
+        padding-top: 115px;
+    }
+
+    .hero-illustration {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 575px) {
+    .hero {
+        padding-top: 105px;
+    }
+
+    .hero h1 {
+        font-size: 39px;
+    }
+
+    .hero-info {
+        gap: 14px;
+    }
+
+    .hero-info div {
+        padding-right: 13px;
+    }
+
+    .hero-info strong {
+        font-size: 19px;
+    }
+
+    .hero-illustration {
+        min-height: 290px;
+    }
+
+    .illustration-circle {
+        width: 235px;
+        height: 235px;
+    }
+
+    .book-icon {
+        font-size: 85px;
+    }
+
+    .floating-card {
+        right: 0;
+        bottom: 15px;
+        font-size: 10px;
+    }
+
+    .section-padding {
+        padding: 45px 0;
+    }
+
+    .section-heading h2 {
+        font-size: 25px;
+    }
+
+    .form-container {
+        padding: 20px 15px;
+    }
+
+    .about-section h2 {
+        font-size: 30px;
+    }
+
+    .about-cards {
+        gap: 10px;
+    }
+
+    .about-card {
+        padding: 17px 12px;
+    }
+}

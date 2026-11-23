@@ -1,0 +1,267 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodie - Online Food Ordering</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">Food<span>ie.</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#categories">Categories</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#menu">Our Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#offers">Offers</a></li>
+                    <li class="nav-item ms-lg-3"><a class="btn btn-orange" href="#menu">Order Now</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero" id="home">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 hero-content">
+                    <span class="eyebrow">FRESH FOOD • GREAT TASTE</span>
+                    <h1>Delicious Food<br>Delivered <span>To You.</span></h1>
+                    <p>Enjoy your favourite meals prepared with fresh ingredients. Discover delicious food and order your favourite dishes from the comfort of your home.</p>
+                    <div class="d-flex flex-wrap gap-3">
+                        <a href="#menu" class="btn btn-orange">Explore Menu →</a>
+                        <a href="#offers" class="btn btn-outline-dark rounded-pill px-4">View Offers</a>
+                    </div>
+                    <div class="hero-stats">
+                        <div><strong>50+</strong><small>Food Items</small></div>
+                        <div><strong>100%</strong><small>Fresh Food</small></div>
+                        <div><strong>24/7</strong><small>Online Access</small></div>
+                    </div>
+                </div>
+                <div class="col-lg-6 hero-image-wrap">
+                    <img src="../../../assets/hero-food.png" alt="Freshly prepared pizza" class="hero-image">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="section-padding" id="categories">
+        <div class="container">
+            <div class="section-heading">
+                <span>— EXPLORE OUR FOOD —</span>
+                <h2>Popular Categories</h2>
+                <p>Choose from a variety of delicious food categories.</p>
+            </div>
+            <div class="row g-3">
+                <div class="col-6 col-md-4 col-lg-2">
+                    <a class="category-card" href="#menu">
+                        <img src="../../../assets/pizza.png" alt="Pizza">
+                        <h3>Pizza</h3>
+                        <p>12 Items</p>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <a class="category-card" href="#menu">
+                        <img src="../../../assets/burger.png" alt="Burger">
+                        <h3>Burgers</h3>
+                        <p>10 Items</p>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <a class="category-card" href="#menu">
+                        <img src="../../../assets/pasta.png" alt="Pasta">
+                        <h3>Pasta</h3>
+                        <p>8 Items</p>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <a class="category-card" href="#menu">
+                        <img src="../../../assets/biryani.png" alt="Biryani">
+                        <h3>Biryani</h3>
+                        <p>15 Items</p>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <a class="category-card" href="#menu">
+                        <img src="../../../assets/sandwich.png" alt="Sandwich">
+                        <h3>Sandwich</h3>
+                        <p>9 Items</p>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <a class="category-card" href="#menu">
+                        <img src="../../../assets/dessert.png" alt="Dessert">
+                        <h3>Desserts</h3>
+                        <p>11 Items</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="menu-section section-padding" id="menu">
+        <div class="container">
+            <div class="section-heading">
+                <span>— OUR SPECIAL MENU —</span>
+                <h2>Popular Dishes</h2>
+                <p>Explore some of our most loved dishes.</p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-8">
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <article class="dish-card">
+                                <img src="../../../assets/pizza.png" alt="Cheese pizza">
+                                <div>
+                                    <h3>Cheese Pizza <span>★ 4.8</span></h3>
+                                    <p>Freshly baked pizza with cheese and vegetables.</p>
+                                    <strong>₹249</strong>
+                                    <a href="#contact" class="small-order">Order Now +</a>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-md-6">
+                            <article class="dish-card">
+                                <img src="../../../assets/burger.png" alt="Classic burger">
+                                <div>
+                                    <h3>Classic Burger <span>★ 4.7</span></h3>
+                                    <p>Juicy burger with fresh vegetables and sauce.</p>
+                                    <strong>₹149</strong>
+                                    <a href="#contact" class="small-order">Order Now +</a>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-md-6">
+                            <article class="dish-card">
+                                <img src="../../../assets/pasta.png" alt="Creamy pasta">
+                                <div>
+                                    <h3>Creamy Pasta <span>★ 4.6</span></h3>
+                                    <p>Delicious creamy pasta with special seasoning.</p>
+                                    <strong>₹199</strong>
+                                    <a href="#contact" class="small-order">Order Now +</a>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-md-6">
+                            <article class="dish-card">
+                                <img src="../../../assets/biryani.png" alt="Special biryani">
+                                <div>
+                                    <h3>Special Biryani <span>★ 4.9</span></h3>
+                                    <p>Fragrant rice prepared with aromatic spices.</p>
+                                    <strong>₹229</strong>
+                                    <a href="#contact" class="small-order">Order Now +</a>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-md-6">
+                            <article class="dish-card">
+                                <img src="../../../assets/sandwich.png" alt="Veg sandwich">
+                                <div>
+                                    <h3>Veg Sandwich <span>★ 4.5</span></h3>
+                                    <p>Toasted sandwich filled with fresh vegetables.</p>
+                                    <strong>₹99</strong>
+                                    <a href="#contact" class="small-order">Order Now +</a>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-md-6">
+                            <article class="dish-card">
+                                <img src="../../../assets/dessert.png" alt="Chocolate dessert">
+                                <div>
+                                    <h3>Chocolate Dessert <span>★ 4.8</span></h3>
+                                    <p>A delightful chocolate dessert for sweet lovers.</p>
+                                    <strong>₹129</strong>
+                                    <a href="#contact" class="small-order">Order Now +</a>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4" id="offers">
+                    <div class="offer-card">
+                        <span>— LIMITED TIME OFFER —</span>
+                        <h2>Get 30% OFF<br>on Your First Order!</h2>
+                        <p>Enjoy delicious food at special prices. Don't miss out!</p>
+                        <a href="#contact" class="btn btn-light rounded-pill px-4">Order Your Favourite Food</a>
+                        <img src="../../../assets/burger.png" alt="Burger offer">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="why-section section-padding">
+        <div class="container">
+            <div class="section-heading">
+                <span>WHY CHOOSE US</span>
+                <h2>Good Food, Great Experience</h2>
+            </div>
+            <div class="row g-3">
+                <div class="col-md-4">
+                    <div class="why-card">
+                        <div class="why-icon">🌿</div>
+                        <div>
+                            <h3>Fresh Ingredients</h3>
+                            <p>We focus on fresh ingredients and delicious meals.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="why-card">
+                        <div class="why-icon">🍴</div>
+                        <div>
+                            <h3>Delicious Taste</h3>
+                            <p>Enjoy a variety of tasty dishes for every occasion.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="why-card">
+                        <div class="why-icon">🚀</div>
+                        <div>
+                            <h3>Easy Ordering</h3>
+                            <p>Explore our menu and find your favourite food easily.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-5">
+                    <a class="footer-brand" href="#home">Food<span>ie.</span></a>
+                    <p>Good food, great mood.<br>Discover delicious food with Foodie.</p>
+                </div>
+                <div class="col-md-3">
+                    <h3>Quick Links</h3>
+                    <a href="#home">Home</a>
+                    <a href="#categories">Categories</a>
+                    <a href="#menu">Our Menu</a>
+                    <a href="#offers">Offers</a>
+                </div>
+                <div class="col-md-4">
+                    <h3>Contact Us</h3>
+                    <p>✉ hello@foodie.com</p>
+                    <p>☎ +91 98765 43210</p>
+                    <p>⌖ India</p>
+                </div>
+            </div>
+            <div class="copyright">© 2026 Foodie. All Rights Reserved.</div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
