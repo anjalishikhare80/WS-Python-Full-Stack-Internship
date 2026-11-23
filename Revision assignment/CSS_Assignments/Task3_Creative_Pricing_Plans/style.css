@@ -1,7 +1,5 @@
 
-/* ==========================
-   BASIC RESET
-========================== */
+
 
 * {
     margin: 0;
@@ -17,9 +15,7 @@ body {
 }
 
 
-/* ==========================
-   NAVIGATION BAR
-========================== */
+
 
 .navbar {
     background-color: #ffffff;
@@ -80,9 +76,7 @@ body {
 }
 
 
-/* ==========================
-   HERO SECTION
-========================== */
+
 
 .hero {
     text-align: center;
@@ -135,9 +129,7 @@ body {
 }
 
 
-/* ==========================
-   PRICING SECTION
-========================== */
+
 
 .pricing-section {
     padding: 85px 8%;
@@ -166,9 +158,7 @@ body {
 }
 
 
-/* ==========================
-   COMMON PRICING CARD
-========================== */
+
 
 .pricing-card {
     background-color: white;
@@ -193,9 +183,7 @@ body {
 }
 
 
-/* ==========================
-   PLAN ICONS
-========================== */
+
 
 .plan-icon {
     width: 55px;
@@ -225,9 +213,7 @@ body {
 }
 
 
-/* ==========================
-   PLAN TITLES
-========================== */
+
 
 .pricing-card h3 {
     font-size: 25px;
@@ -254,9 +240,6 @@ body {
 }
 
 
-/* ==========================
-   PRICES
-========================== */
 
 .price {
     font-size: 42px;
@@ -276,9 +259,7 @@ body {
 }
 
 
-/* ==========================
-   PLAN DIVIDER
-========================== */
+
 
 .plan-divider {
     height: 1px;
@@ -287,9 +268,7 @@ body {
 }
 
 
-/* ==========================
-   PLAN FEATURES
-========================== */
+
 
 .features-list {
     list-style: none;
@@ -323,9 +302,7 @@ body {
 }
 
 
-/* ==========================
-   PLAN BUTTONS
-========================== */
+
 
 .plan-button {
     display: block;
@@ -368,9 +345,7 @@ body {
 }
 
 
-/* ==========================
-   DIFFERENT CARD BORDERS
-========================== */
+
 
 .basic-card {
     border-color: #d7e8fa;
@@ -397,9 +372,7 @@ body {
 }
 
 
-/* ==========================
-   POPULAR BADGE
-========================== */
+
 
 .popular-badge {
     position: absolute;
@@ -419,9 +392,7 @@ body {
 }
 
 
-/* ==========================
-   FEATURES SECTION
-========================== */
+
 
 .features-section {
     background-color: #ffffff;
@@ -474,9 +445,7 @@ body {
 }
 
 
-/* ==========================
-   CONTACT SECTION
-========================== */
+
 
 .contact-section {
     text-align: center;
@@ -516,9 +485,6 @@ body {
 }
 
 
-/* ==========================
-   FOOTER
-========================== */
 
 .footer {
     background-color: #202035;
@@ -539,9 +505,7 @@ body {
 }
 
 
-/* ==========================
-   RESPONSIVE DESIGN
-========================== */
+
 
 @media (max-width: 900px) {
 

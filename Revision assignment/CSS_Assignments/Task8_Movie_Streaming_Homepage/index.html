@@ -1,0 +1,244 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineFlix | Movie Streaming</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+   
+    <header class="navbar">
+        <a href="#home" class="logo">CINE<span>FLIX</span></a>
+
+        <nav>
+            <a href="#home" class="active">Home</a>
+            <a href="#movies">Movies</a>
+            <a href="#series">TV Shows</a>
+            <a href="#categories">Categories</a>
+        </nav>
+
+        <div class="nav-actions">
+            <button class="search-button" type="button" aria-label="Search">⌕</button>
+            <a href="#profile" class="profile">JD</a>
+        </div>
+    </header>
+
+   
+    <main id="home">
+        <section class="hero">
+            <div class="hero-background"></div>
+
+            <div class="hero-content">
+                <span class="featured-label">CINEFLIX ORIGINAL</span>
+                <p class="hero-category">ACTION • ADVENTURE • SCI-FI</p>
+
+                <h1>THE LAST<br>HORIZON</h1>
+
+                <div class="movie-meta">
+                    <span class="rating">★ 8.9</span>
+                    <span>2026</span>
+                    <span>2h 18m</span>
+                    <span class="quality">4K ULTRA HD</span>
+                </div>
+
+                <p class="hero-description">
+                    In a world beyond imagination, one journey will change
+                    everything. Discover the adventure that awaits beyond
+                    the horizon.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#movies" class="watch-button">▶ &nbsp; Watch Now</a>
+                    <a href="#movies" class="details-button">More Details</a>
+                </div>
+            </div>
+
+            <div class="hero-bottom">
+                <span>01 / 04</span>
+                <div class="slider-lines">
+                    <span class="selected"></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </section>
+
+       
+        <section class="movie-section" id="movies">
+            <div class="section-heading">
+                <div>
+                    <p class="section-label">WHAT'S POPULAR</p>
+                    <h2>Trending Now</h2>
+                </div>
+                <a href="#movies" class="view-all">View All →</a>
+            </div>
+
+            <div class="movie-grid">
+
+                <article class="movie-card">
+                    <div class="poster">
+                        <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=600&q=85"
+                             alt="Mountain adventure movie poster">
+                        <span class="movie-tag">TOP 10</span>
+                        <div class="poster-overlay">
+                            <a href="#movies" class="play-button">▶</a>
+                            <h3>Into the Wild</h3>
+                            <p>Adventure • 2026</p>
+                        </div>
+                    </div>
+                    <div class="movie-info">
+                        <h3>Into the Wild</h3>
+                        <span>★ 8.5</span>
+                    </div>
+                </article>
+
+                <article class="movie-card">
+                    <div class="poster">
+                        <img src="https://images.unsplash.com/photo-1519608487953-e999c86e7455?auto=format&fit=crop&w=600&q=85"
+                             alt="Night sky movie poster">
+                        <span class="movie-tag new">NEW</span>
+                        <div class="poster-overlay">
+                            <a href="#movies" class="play-button">▶</a>
+                            <h3>Beyond Stars</h3>
+                            <p>Sci-Fi • 2026</p>
+                        </div>
+                    </div>
+                    <div class="movie-info">
+                        <h3>Beyond Stars</h3>
+                        <span>★ 9.1</span>
+                    </div>
+                </article>
+
+                <article class="movie-card">
+                    <div class="poster">
+                        <img src="https://images.unsplash.com/photo-1518837695005-2083093ee35b?auto=format&fit=crop&w=600&q=85"
+                             alt="Ocean movie poster">
+                        <span class="movie-tag">POPULAR</span>
+                        <div class="poster-overlay">
+                            <a href="#movies" class="play-button">▶</a>
+                            <h3>Deep Blue</h3>
+                            <p>Drama • 2025</p>
+                        </div>
+                    </div>
+                    <div class="movie-info">
+                        <h3>Deep Blue</h3>
+                        <span>★ 8.7</span>
+                    </div>
+                </article>
+
+                <article class="movie-card">
+                    <div class="poster">
+                        <img src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=600&q=85"
+                             alt="Forest mystery movie poster">
+                        <span class="movie-tag new">NEW</span>
+                        <div class="poster-overlay">
+                            <a href="#movies" class="play-button">▶</a>
+                            <h3>Dark Forest</h3>
+                            <p>Thriller • 2026</p>
+                        </div>
+                    </div>
+                    <div class="movie-info">
+                        <h3>Dark Forest</h3>
+                        <span>★ 8.3</span>
+                    </div>
+                </article>
+
+                <article class="movie-card">
+                    <div class="poster">
+                        <img src="https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&fit=crop&w=600&q=85"
+                             alt="Sunset landscape movie poster">
+                        <span class="movie-tag">FEATURED</span>
+                        <div class="poster-overlay">
+                            <a href="#movies" class="play-button">▶</a>
+                            <h3>Golden Hour</h3>
+                            <p>Romance • 2025</p>
+                        </div>
+                    </div>
+                    <div class="movie-info">
+                        <h3>Golden Hour</h3>
+                        <span>★ 8.6</span>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+      
+        <section class="collection-section" id="series">
+            <div class="collection-banner">
+                <div class="collection-content">
+                    <span class="section-label">EDITOR'S PICK</span>
+                    <h2>Stories That<br>Stay With You.</h2>
+                    <p>Discover unforgettable stories, exciting adventures and
+                       cinematic experiences.</p>
+                    <a href="#movies" class="watch-button">Explore Collection →</a>
+                </div>
+            </div>
+        </section>
+
+        
+        <section class="category-section" id="categories">
+            <div class="section-heading">
+                <div>
+                    <p class="section-label">EXPLORE YOUR MOOD</p>
+                    <h2>Browse Categories</h2>
+                </div>
+            </div>
+
+            <div class="category-grid">
+                <a href="#movies" class="category-card action">
+                    <span>⚡</span>
+                    <h3>Action</h3>
+                    <p>Exciting adventures</p>
+                </a>
+
+                <a href="#movies" class="category-card comedy">
+                    <span>☻</span>
+                    <h3>Comedy</h3>
+                    <p>Laugh out loud</p>
+                </a>
+
+                <a href="#movies" class="category-card drama">
+                    <span>🎭</span>
+                    <h3>Drama</h3>
+                    <p>Powerful stories</p>
+                </a>
+
+                <a href="#movies" class="category-card scifi">
+                    <span>✦</span>
+                    <h3>Sci-Fi</h3>
+                    <p>Beyond imagination</p>
+                </a>
+
+                <a href="#movies" class="category-card horror">
+                    <span>☠</span>
+                    <h3>Horror</h3>
+                    <p>Feel the suspense</p>
+                </a>
+            </div>
+        </section>
+
+      
+        <footer class="footer" id="profile">
+            <a href="#home" class="logo">CINE<span>FLIX</span></a>
+            <p>Your world of movies, anytime and anywhere.</p>
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#movies">Movies</a>
+                <a href="#categories">Categories</a>
+                <a href="#profile">Contact</a>
+            </div>
+            <p class="copyright">© 2026 CineFlix. All rights reserved.</p>
+        </footer>
+
+    </main>
+
+</body>
+</html>

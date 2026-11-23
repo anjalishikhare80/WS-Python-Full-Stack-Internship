@@ -1,7 +1,5 @@
 
-/* ==========================
-   BASIC RESET
-========================== */
+
 
 * {
     margin: 0;
@@ -22,9 +20,7 @@ body {
 }
 
 
-/* ==========================
-   MAIN CONTAINER
-========================== */
+
 
 .auth-container {
     width: 100%;
@@ -42,9 +38,7 @@ body {
 }
 
 
-/* ==========================
-   WELCOME SECTION
-========================== */
+
 
 .welcome-section {
     background: linear-gradient(145deg, #4030a8, #7651e8);
@@ -89,9 +83,7 @@ body {
 }
 
 
-/* ==========================
-   BRAND
-========================== */
+
 
 .brand {
     font-size: 25px;
@@ -106,9 +98,7 @@ body {
 }
 
 
-/* ==========================
-   WELCOME CONTENT
-========================== */
+
 
 .welcome-content {
     position: relative;
@@ -163,9 +153,7 @@ body {
 }
 
 
-/* ==========================
-   FORM SECTION
-========================== */
+
 
 .form-section {
     display: flex;
@@ -181,9 +169,7 @@ body {
 }
 
 
-/* ==========================
-   FORM TABS
-========================== */
+
 
 .form-tabs {
     display: flex;
@@ -217,9 +203,7 @@ body {
 }
 
 
-/* ==========================
-   FORM HEADING
-========================== */
+
 
 .form-heading {
     margin-bottom: 30px;
@@ -238,9 +222,7 @@ body {
 }
 
 
-/* ==========================
-   INPUT FIELDS
-========================== */
+
 
 .input-group {
     margin-bottom: 21px;
@@ -280,9 +262,7 @@ body {
 }
 
 
-/* ==========================
-   FORM OPTIONS
-========================== */
+
 
 .form-options {
     display: flex;
@@ -320,9 +300,7 @@ body {
 }
 
 
-/* ==========================
-   TERMS AND CONDITIONS
-========================== */
+
 
 .terms {
     margin: 5px 0 22px;
@@ -330,9 +308,7 @@ body {
 }
 
 
-/* ==========================
-   SUBMIT BUTTON
-========================== */
+
 
 .submit-button {
     width: 100%;
@@ -360,9 +336,7 @@ body {
 }
 
 
-/* ==========================
-   FORM SWITCH TEXT
-========================== */
+
 
 .switch-text {
     margin-top: 25px;
@@ -389,18 +363,14 @@ body {
 }
 
 
-/* ==========================
-   HIDE SIGNUP / LOGIN FORM
-========================== */
+
 
 .hidden {
     display: none;
 }
 
 
-/* ==========================
-   RESPONSIVE DESIGN
-========================== */
+
 
 @media (max-width: 850px) {
 

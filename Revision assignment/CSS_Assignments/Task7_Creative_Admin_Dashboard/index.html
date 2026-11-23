@@ -1,0 +1,349 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AdminPro | Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="dashboard">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="brand">
+                <span class="brand-icon">A</span>
+                <h2>Admin<span>Pro</span></h2>
+            </div>
+
+            <p class="menu-heading">MAIN MENU</p>
+
+            <nav class="sidebar-nav">
+                <a href="#overview" class="nav-link active">
+                    <span>▦</span> Dashboard
+                </a>
+                <a href="#analytics" class="nav-link">
+                    <span>▥</span> Analytics
+                </a>
+                <a href="#users" class="nav-link">
+                    <span>♙</span> Users
+                </a>
+                <a href="#orders" class="nav-link">
+                    <span>▤</span> Orders
+                </a>
+                <a href="#products" class="nav-link">
+                    <span>▣</span> Products
+                </a>
+                <a href="#messages" class="nav-link">
+                    <span>✉</span> Messages
+                    <span class="notification">4</span>
+                </a>
+            </nav>
+
+            <p class="menu-heading settings-heading">PREFERENCES</p>
+
+            <nav class="sidebar-nav">
+                <a href="#settings" class="nav-link">
+                    <span>⚙</span> Settings
+                </a>
+                <a href="#help" class="nav-link">
+                    <span>?</span> Help Center
+                </a>
+            </nav>
+
+            <div class="sidebar-bottom">
+                <div class="help-card">
+                    <div class="help-icon">💡</div>
+                    <h3>Need Help?</h3>
+                    <p>Contact our support team for assistance.</p>
+                    <a href="#help">Get Support →</a>
+                </div>
+
+                <a href="#logout" class="logout-link">
+                    <span>↪</span> Log Out
+                </a>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content" id="overview">
+
+            <!-- Top Header -->
+            <header class="topbar">
+                <div>
+                    <p class="welcome-text">Welcome back, Admin 👋</p>
+                    <h1>Dashboard Overview</h1>
+                </div>
+
+                <div class="topbar-actions">
+                    <button class="icon-button" type="button" aria-label="Notifications">
+                        ♧
+                        <span class="notification-dot"></span>
+                    </button>
+
+                    <div class="admin-profile">
+                        <div class="avatar">AS</div>
+                        <div class="profile-details">
+                            <strong>Admin Sharma</strong>
+                            <span>Administrator</span>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Date and Filter -->
+            <section class="dashboard-intro">
+                <div>
+                    <h2>Overview</h2>
+                    <p>Here's what's happening with your business today.</p>
+                </div>
+
+                <button class="date-button" type="button">
+                    📅 &nbsp; Last 30 Days &nbsp;⌄
+                </button>
+            </section>
+
+            <!-- Statistics Cards -->
+            <section class="stats-container" id="analytics">
+
+                <article class="stat-card purple-card">
+                    <div class="stat-top">
+                        <span>Total Revenue</span>
+                        <span class="stat-icon">₹</span>
+                    </div>
+                    <h2>₹2,45,800</h2>
+                    <p class="growth">↗ 12.8% <span>from last month</span></p>
+                    <div class="mini-bar">
+                        <span style="width: 78%"></span>
+                    </div>
+                </article>
+
+                <article class="stat-card blue-card">
+                    <div class="stat-top">
+                        <span>Total Users</span>
+                        <span class="stat-icon">♙</span>
+                    </div>
+                    <h2>8,549</h2>
+                    <p class="growth">↗ 8.2% <span>from last month</span></p>
+                    <div class="mini-bar">
+                        <span style="width: 65%"></span>
+                    </div>
+                </article>
+
+                <article class="stat-card green-card">
+                    <div class="stat-top">
+                        <span>Total Orders</span>
+                        <span class="stat-icon">▤</span>
+                    </div>
+                    <h2>1,245</h2>
+                    <p class="growth">↗ 15.4% <span>from last month</span></p>
+                    <div class="mini-bar">
+                        <span style="width: 85%"></span>
+                    </div>
+                </article>
+
+                <article class="stat-card orange-card">
+                    <div class="stat-top">
+                        <span>Pending Tasks</span>
+                        <span class="stat-icon">◷</span>
+                    </div>
+                    <h2>28</h2>
+                    <p class="decline">↘ 3.5% <span>from last month</span></p>
+                    <div class="mini-bar">
+                        <span style="width: 38%"></span>
+                    </div>
+                </article>
+
+            </section>
+
+            <!-- Middle Section -->
+            <section class="content-row">
+
+                <!-- Overview Chart -->
+                <div class="panel revenue-panel">
+                    <div class="panel-heading">
+                        <div>
+                            <h3>Revenue Overview</h3>
+                            <p>Monthly revenue performance</p>
+                        </div>
+                        <button class="small-select" type="button">This Year ⌄</button>
+                    </div>
+
+                    <div class="chart-summary">
+                        <h2>₹8,75,400</h2>
+                        <span>+18.6% this year</span>
+                    </div>
+
+                    <div class="chart">
+                        <div class="chart-y-labels">
+                            <span>₹10k</span>
+                            <span>₹8k</span>
+                            <span>₹6k</span>
+                            <span>₹4k</span>
+                            <span>₹2k</span>
+                        </div>
+
+                        <div class="chart-area">
+                            <div class="chart-grid-lines">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+
+                            <div class="chart-bars">
+                                <div class="bar-group">
+                                    <div class="bar" style="height: 42%"></div>
+                                    <span>Jan</span>
+                                </div>
+                                <div class="bar-group">
+                                    <div class="bar" style="height: 58%"></div>
+                                    <span>Feb</span>
+                                </div>
+                                <div class="bar-group">
+                                    <div class="bar" style="height: 48%"></div>
+                                    <span>Mar</span>
+                                </div>
+                                <div class="bar-group">
+                                    <div class="bar" style="height: 75%"></div>
+                                    <span>Apr</span>
+                                </div>
+                                <div class="bar-group">
+                                    <div class="bar" style="height: 62%"></div>
+                                    <span>May</span>
+                                </div>
+                                <div class="bar-group">
+                                    <div class="bar" style="height: 88%"></div>
+                                    <span>Jun</span>
+                                </div>
+                                <div class="bar-group">
+                                    <div class="bar" style="height: 70%"></div>
+                                    <span>Jul</span>
+                                </div>
+                                <div class="bar-group">
+                                    <div class="bar" style="height: 95%"></div>
+                                    <span>Aug</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Traffic Sources -->
+                <div class="panel traffic-panel">
+                    <div class="panel-heading">
+                        <div>
+                            <h3>Traffic Sources</h3>
+                            <p>Where visitors come from</p>
+                        </div>
+                        <button class="dots-button" type="button" aria-label="More options">•••</button>
+                    </div>
+
+                    <div class="donut-area">
+                        <div class="donut-chart">
+                            <div class="donut-inner">
+                                <strong>8,549</strong>
+                                <span>Visitors</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="traffic-list">
+                        <div><span class="legend purple"></span> Direct <strong>45%</strong></div>
+                        <div><span class="legend blue"></span> Social Media <strong>30%</strong></div>
+                        <div><span class="legend orange"></span> Search Engine <strong>25%</strong></div>
+                    </div>
+                </div>
+
+            </section>
+
+            <!-- Recent Activity -->
+            <section class="panel activity-panel">
+                <div class="panel-heading">
+                    <div>
+                        <h3>Recent Activity</h3>
+                        <p>Latest updates from your dashboard</p>
+                    </div>
+                    <a href="#activity" class="view-all">View All →</a>
+                </div>
+
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>USER</th>
+                                <th>ACTIVITY</th>
+                                <th>DATE</th>
+                                <th>STATUS</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="user-cell">
+                                        <span class="user-avatar avatar-one">RK</span>
+                                        <strong>Rahul Kumar</strong>
+                                    </div>
+                                </td>
+                                <td>Placed a new order</td>
+                                <td>Nov 23, 2026</td>
+                                <td><span class="status completed">Completed</span></td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <div class="user-cell">
+                                        <span class="user-avatar avatar-two">PS</span>
+                                        <strong>Priya Sharma</strong>
+                                    </div>
+                                </td>
+                                <td>Created a new account</td>
+                                <td>Nov 22, 2026</td>
+                                <td><span class="status active-status">Active</span></td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <div class="user-cell">
+                                        <span class="user-avatar avatar-three">AM</span>
+                                        <strong>Amit Mehta</strong>
+                                    </div>
+                                </td>
+                                <td>Requested a refund</td>
+                                <td>Nov 22, 2026</td>
+                                <td><span class="status pending">Pending</span></td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <div class="user-cell">
+                                        <span class="user-avatar avatar-four">SD</span>
+                                        <strong>Sneha Desai</strong>
+                                    </div>
+                                </td>
+                                <td>Updated profile details</td>
+                                <td>Nov 21, 2026</td>
+                                <td><span class="status completed">Completed</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <footer class="footer">
+                <p>© 2026 AdminPro Dashboard. All rights reserved.</p>
+                <p>Made with 💜 for better management.</p>
+            </footer>
+
+        </main>
+    </div>
+
+</body>
+</html>

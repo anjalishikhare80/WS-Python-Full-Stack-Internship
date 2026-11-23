@@ -1,7 +1,5 @@
 
-/* ==========================
-   BASIC RESET
-========================== */
+
 
 * {
     margin: 0;
@@ -22,9 +20,7 @@ img {
 }
 
 
-/* ==========================
-   NAVIGATION BAR
-========================== */
+
 
 .header {
     background-color: #ffffff;
@@ -164,9 +160,7 @@ img {
 }
 
 
-/* ==========================
-   COMMON SECTION STYLING
-========================== */
+
 
 .section-padding {
     padding: 85px 9%;
@@ -191,9 +185,6 @@ img {
 }
 
 
-/* ==========================
-   DESTINATION GALLERY
-========================== */
 
 .destinations {
     background-color: #f8fafc;
@@ -296,9 +287,7 @@ img {
 }
 
 
-/* ==========================
-   ABOUT SECTION
-========================== */
+
 
 .about {
     background-color: #ffffff;
@@ -333,9 +322,6 @@ img {
 }
 
 
-/* ==========================
-   CONTACT SECTION
-========================== */
 
 .contact {
     text-align: center;
@@ -366,9 +352,7 @@ img {
 }
 
 
-/* ==========================
-   FOOTER
-========================== */
+
 
 .footer {
     background-color: #142735;
@@ -421,9 +405,7 @@ img {
 }
 
 
-/* ==========================
-   RESPONSIVE DESIGN
-========================== */
+
 
 @media (max-width: 1000px) {
 
