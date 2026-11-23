@@ -1,0 +1,620 @@
+
+/* ==========================
+   BASIC RESET
+========================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f8fc;
+    color: #24243a;
+}
+
+
+/* ==========================
+   NAVIGATION BAR
+========================== */
+
+.navbar {
+    background-color: #ffffff;
+    min-height: 75px;
+    padding: 15px 8%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.05);
+}
+
+.logo,
+.footer-logo {
+    font-size: 27px;
+    font-weight: bold;
+    color: #25253c;
+    text-decoration: none;
+}
+
+.logo span,
+.footer-logo span {
+    color: #7357df;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #55556a;
+    font-size: 15px;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #7357df;
+}
+
+.nav-button {
+    background-color: #7357df;
+    color: white;
+    padding: 12px 22px;
+    border-radius: 7px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.nav-button:hover {
+    background-color: #5239bd;
+    transform: translateY(-3px);
+}
+
+
+/* ==========================
+   HERO SECTION
+========================== */
+
+.hero {
+    text-align: center;
+    padding: 85px 20px 75px;
+    background: linear-gradient(135deg, #f1efff, #ffffff);
+}
+
+.tagline,
+.section-label {
+    color: #7357df;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 18px;
+}
+
+.hero h1 {
+    font-size: clamp(35px, 5vw, 55px);
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero h1 span {
+    display: block;
+    color: #7357df;
+}
+
+.hero-description {
+    max-width: 600px;
+    margin: 0 auto 30px;
+    color: #69697d;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.hero-button {
+    display: inline-block;
+    padding: 14px 30px;
+    background-color: #7357df;
+    color: white;
+    text-decoration: none;
+    border-radius: 7px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.hero-button:hover {
+    background-color: #5239bd;
+    transform: translateY(-4px);
+}
+
+
+/* ==========================
+   PRICING SECTION
+========================== */
+
+.pricing-section {
+    padding: 85px 8%;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+.section-heading h2 {
+    font-size: 36px;
+    margin-bottom: 12px;
+}
+
+.section-heading > p:last-child {
+    color: #77778b;
+    line-height: 1.7;
+}
+
+.pricing-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    align-items: stretch;
+}
+
+
+/* ==========================
+   COMMON PRICING CARD
+========================== */
+
+.pricing-card {
+    background-color: white;
+    padding: 35px 28px;
+    border-radius: 16px;
+    text-align: center;
+    position: relative;
+
+    border: 2px solid transparent;
+
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.07);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+}
+
+.pricing-card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.14);
+}
+
+
+/* ==========================
+   PLAN ICONS
+========================== */
+
+.plan-icon {
+    width: 55px;
+    height: 55px;
+    margin: 0 auto 18px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 15px;
+    color: white;
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.basic-icon {
+    background-color: #3985d6;
+}
+
+.pro-icon {
+    background-color: #8b5cf6;
+}
+
+.premium-icon {
+    background-color: #d18b32;
+}
+
+
+/* ==========================
+   PLAN TITLES
+========================== */
+
+.pricing-card h3 {
+    font-size: 25px;
+    margin-bottom: 12px;
+}
+
+.basic-card h3 {
+    color: #3985d6;
+}
+
+.pro-card h3 {
+    color: #8b5cf6;
+}
+
+.premium-card h3 {
+    color: #d18b32;
+}
+
+.plan-description {
+    color: #77778b;
+    font-size: 14px;
+    line-height: 1.6;
+    min-height: 45px;
+}
+
+
+/* ==========================
+   PRICES
+========================== */
+
+.price {
+    font-size: 42px;
+    font-weight: bold;
+    margin: 25px 0 20px;
+}
+
+.currency {
+    font-size: 23px;
+    vertical-align: top;
+}
+
+.period {
+    font-size: 14px;
+    color: #77778b;
+    font-weight: normal;
+}
+
+
+/* ==========================
+   PLAN DIVIDER
+========================== */
+
+.plan-divider {
+    height: 1px;
+    background-color: #e8e8ef;
+    margin-bottom: 25px;
+}
+
+
+/* ==========================
+   PLAN FEATURES
+========================== */
+
+.features-list {
+    list-style: none;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.features-list li {
+    padding: 12px 0;
+    color: #5c5c70;
+    font-size: 14px;
+    border-bottom: 1px solid #f0f0f4;
+}
+
+.features-list li::before {
+    content: "✓";
+    font-weight: bold;
+    margin-right: 12px;
+}
+
+.basic-card .features-list li::before {
+    color: #3985d6;
+}
+
+.pro-card .features-list li::before {
+    color: #8b5cf6;
+}
+
+.premium-card .features-list li::before {
+    color: #d18b32;
+}
+
+
+/* ==========================
+   PLAN BUTTONS
+========================== */
+
+.plan-button {
+    display: block;
+    padding: 14px 12px;
+    border-radius: 7px;
+
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+
+    transition: all 0.3s ease;
+}
+
+.basic-button {
+    background-color: #3985d6;
+}
+
+.basic-button:hover {
+    background-color: #2266ae;
+    box-shadow: 0 8px 18px rgba(57, 133, 214, 0.3);
+}
+
+.pro-button {
+    background-color: #8b5cf6;
+}
+
+.pro-button:hover {
+    background-color: #6d3fe0;
+    box-shadow: 0 8px 18px rgba(139, 92, 246, 0.3);
+}
+
+.premium-button {
+    background-color: #d18b32;
+}
+
+.premium-button:hover {
+    background-color: #a96816;
+    box-shadow: 0 8px 18px rgba(209, 139, 50, 0.3);
+}
+
+
+/* ==========================
+   DIFFERENT CARD BORDERS
+========================== */
+
+.basic-card {
+    border-color: #d7e8fa;
+}
+
+.basic-card:hover {
+    border-color: #3985d6;
+}
+
+.pro-card {
+    border-color: #d9caff;
+}
+
+.pro-card:hover {
+    border-color: #8b5cf6;
+}
+
+.premium-card {
+    border-color: #f1dfc3;
+}
+
+.premium-card:hover {
+    border-color: #d18b32;
+}
+
+
+/* ==========================
+   POPULAR BADGE
+========================== */
+
+.popular-badge {
+    position: absolute;
+    top: -14px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    background-color: #8b5cf6;
+    color: white;
+
+    padding: 8px 18px;
+    border-radius: 20px;
+
+    font-size: 11px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+
+/* ==========================
+   FEATURES SECTION
+========================== */
+
+.features-section {
+    background-color: #ffffff;
+    padding: 80px 8%;
+}
+
+.features-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.feature-box {
+    padding: 30px;
+    background-color: #f8f7ff;
+    border-radius: 12px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.feature-box:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+.feature-icon {
+    width: 50px;
+    height: 50px;
+    margin: 0 auto 18px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #7357df;
+    color: white;
+
+    border-radius: 50%;
+    font-size: 23px;
+}
+
+.feature-box h3 {
+    margin-bottom: 12px;
+}
+
+.feature-box p {
+    color: #77778b;
+    line-height: 1.7;
+    font-size: 14px;
+}
+
+
+/* ==========================
+   CONTACT SECTION
+========================== */
+
+.contact-section {
+    text-align: center;
+    padding: 75px 20px;
+    background: linear-gradient(135deg, #7357df, #9b76f5);
+    color: white;
+}
+
+.contact-section h2 {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.contact-section p {
+    margin-bottom: 25px;
+    line-height: 1.7;
+}
+
+.contact-button {
+    display: inline-block;
+    padding: 14px 28px;
+
+    background-color: white;
+    color: #7357df;
+
+    text-decoration: none;
+    border-radius: 7px;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.contact-button:hover {
+    background-color: #24243a;
+    color: white;
+    transform: translateY(-4px);
+}
+
+
+/* ==========================
+   FOOTER
+========================== */
+
+.footer {
+    background-color: #202035;
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+}
+
+.footer-logo {
+    color: white;
+    display: inline-block;
+    margin-bottom: 12px;
+}
+
+.footer p {
+    color: #bdbdcc;
+    font-size: 13px;
+}
+
+
+/* ==========================
+   RESPONSIVE DESIGN
+========================== */
+
+@media (max-width: 900px) {
+
+    .navbar {
+        padding: 15px 5%;
+        flex-wrap: wrap;
+        gap: 18px;
+    }
+
+    .nav-links {
+        gap: 18px;
+    }
+
+    .pricing-container {
+        gap: 18px;
+    }
+
+    .pricing-card {
+        padding: 30px 18px;
+    }
+
+}
+
+@media (max-width: 700px) {
+
+    .navbar {
+        justify-content: center;
+    }
+
+    .nav-links {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .pricing-container {
+        grid-template-columns: 1fr;
+        max-width: 420px;
+        margin: auto;
+        gap: 35px;
+    }
+
+    .features-container {
+        grid-template-columns: 1fr;
+    }
+
+    .hero {
+        padding: 70px 20px;
+    }
+
+    .section-heading h2,
+    .contact-section h2 {
+        font-size: 29px;
+    }
+
+}
+
+@media (max-width: 450px) {
+
+    .nav-links {
+        gap: 12px;
+    }
+
+    .nav-links a {
+        font-size: 13px;
+    }
+
+    .pricing-section {
+        padding: 65px 6%;
+    }
+
+    .price {
+        font-size: 38px;
+    }
+
+}

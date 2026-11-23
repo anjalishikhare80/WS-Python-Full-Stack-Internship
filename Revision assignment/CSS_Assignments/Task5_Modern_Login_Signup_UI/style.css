@@ -1,0 +1,481 @@
+
+/* ==========================
+   BASIC RESET
+========================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #6d5dfc, #a66bfa);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 35px 20px;
+}
+
+
+/* ==========================
+   MAIN CONTAINER
+========================== */
+
+.auth-container {
+    width: 100%;
+    max-width: 1050px;
+    min-height: 650px;
+
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    box-shadow: 0 25px 70px rgba(32, 19, 80, 0.25);
+}
+
+
+/* ==========================
+   WELCOME SECTION
+========================== */
+
+.welcome-section {
+    background: linear-gradient(145deg, #4030a8, #7651e8);
+
+    color: white;
+    padding: 55px 45px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    position: relative;
+    overflow: hidden;
+}
+
+.welcome-section::before {
+    content: "";
+    position: absolute;
+
+    width: 300px;
+    height: 300px;
+
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 50%;
+
+    right: -120px;
+    top: -100px;
+}
+
+.welcome-section::after {
+    content: "";
+    position: absolute;
+
+    width: 220px;
+    height: 220px;
+
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 50%;
+
+    left: -100px;
+    bottom: 70px;
+}
+
+
+/* ==========================
+   BRAND
+========================== */
+
+.brand {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 95px;
+}
+
+.brand-icon {
+    color: #ffd36e;
+    margin-right: 8px;
+    font-size: 30px;
+}
+
+
+/* ==========================
+   WELCOME CONTENT
+========================== */
+
+.welcome-content {
+    position: relative;
+    z-index: 1;
+}
+
+.welcome-label {
+    color: #d5c9ff;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+.welcome-content h1 {
+    font-size: 46px;
+    line-height: 1.2;
+    margin-bottom: 22px;
+}
+
+.welcome-description {
+    color: #e5dfff;
+    font-size: 15px;
+    line-height: 1.9;
+    max-width: 390px;
+    margin-bottom: 30px;
+}
+
+.welcome-features {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+}
+
+.welcome-features p {
+    font-size: 14px;
+    color: #f2edff;
+}
+
+.welcome-features span {
+    color: #ffd36e;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.welcome-footer {
+    color: #d4c9ff;
+    font-size: 12px;
+    margin-top: 60px;
+    position: relative;
+    z-index: 1;
+}
+
+
+/* ==========================
+   FORM SECTION
+========================== */
+
+.form-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 45px;
+}
+
+.form-wrapper {
+    width: 100%;
+    max-width: 390px;
+}
+
+
+/* ==========================
+   FORM TABS
+========================== */
+
+.form-tabs {
+    display: flex;
+    background-color: #f1efff;
+    padding: 5px;
+    border-radius: 9px;
+    margin-bottom: 35px;
+}
+
+.tab-button {
+    flex: 1;
+    padding: 13px;
+
+    border: none;
+    border-radius: 7px;
+
+    background: transparent;
+    color: #77718c;
+
+    font-size: 15px;
+    font-weight: bold;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.tab-button.active {
+    background-color: #7055df;
+    color: white;
+    box-shadow: 0 4px 12px rgba(112, 85, 223, 0.2);
+}
+
+
+/* ==========================
+   FORM HEADING
+========================== */
+
+.form-heading {
+    margin-bottom: 30px;
+}
+
+.form-heading h2 {
+    font-size: 28px;
+    color: #292442;
+    margin-bottom: 10px;
+}
+
+.form-heading p {
+    color: #89859a;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+
+/* ==========================
+   INPUT FIELDS
+========================== */
+
+.input-group {
+    margin-bottom: 21px;
+}
+
+.input-group label {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    color: #38334f;
+    margin-bottom: 9px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 14px 15px;
+
+    border: 1px solid #dedbea;
+    border-radius: 8px;
+
+    outline: none;
+    font-size: 14px;
+
+    color: #292442;
+    background-color: #ffffff;
+
+    transition: all 0.3s ease;
+}
+
+.input-group input::placeholder {
+    color: #aaa6b7;
+}
+
+.input-group input:focus {
+    border-color: #7055df;
+    box-shadow: 0 0 0 4px rgba(112, 85, 223, 0.12);
+}
+
+
+/* ==========================
+   FORM OPTIONS
+========================== */
+
+.form-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+
+    margin: 5px 0 25px;
+}
+
+.remember,
+.terms {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    color: #77718c;
+    font-size: 12px;
+}
+
+.remember input,
+.terms input {
+    accent-color: #7055df;
+}
+
+.forgot-link {
+    color: #7055df;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.forgot-link:hover {
+    text-decoration: underline;
+}
+
+
+/* ==========================
+   TERMS AND CONDITIONS
+========================== */
+
+.terms {
+    margin: 5px 0 22px;
+    line-height: 1.5;
+}
+
+
+/* ==========================
+   SUBMIT BUTTON
+========================== */
+
+.submit-button {
+    width: 100%;
+    padding: 15px;
+
+    border: none;
+    border-radius: 8px;
+
+    background: linear-gradient(135deg, #7055df, #9771f3);
+    color: white;
+
+    font-size: 15px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+.submit-button:hover {
+    background: linear-gradient(135deg, #5038b5, #7952d6);
+    transform: translateY(-3px);
+
+    box-shadow: 0 8px 18px rgba(112, 85, 223, 0.25);
+}
+
+
+/* ==========================
+   FORM SWITCH TEXT
+========================== */
+
+.switch-text {
+    margin-top: 25px;
+    text-align: center;
+
+    color: #89859a;
+    font-size: 13px;
+}
+
+.switch-button {
+    background: none;
+    border: none;
+
+    color: #7055df;
+    font-size: 13px;
+    font-weight: bold;
+
+    cursor: pointer;
+    margin-left: 4px;
+}
+
+.switch-button:hover {
+    text-decoration: underline;
+}
+
+
+/* ==========================
+   HIDE SIGNUP / LOGIN FORM
+========================== */
+
+.hidden {
+    display: none;
+}
+
+
+/* ==========================
+   RESPONSIVE DESIGN
+========================== */
+
+@media (max-width: 850px) {
+
+    .auth-container {
+        max-width: 600px;
+        grid-template-columns: 1fr;
+    }
+
+    .welcome-section {
+        min-height: 380px;
+        padding: 35px;
+    }
+
+    .brand {
+        margin-bottom: 40px;
+    }
+
+    .welcome-content h1 {
+        font-size: 38px;
+    }
+
+    .welcome-footer {
+        margin-top: 40px;
+    }
+
+    .form-section {
+        padding: 45px 30px;
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    body {
+        padding: 15px;
+    }
+
+    .auth-container {
+        border-radius: 14px;
+    }
+
+    .welcome-section {
+        min-height: 350px;
+        padding: 28px 23px;
+    }
+
+    .brand {
+        font-size: 22px;
+        margin-bottom: 35px;
+    }
+
+    .welcome-content h1 {
+        font-size: 32px;
+    }
+
+    .welcome-description {
+        font-size: 13px;
+    }
+
+    .welcome-features {
+        gap: 12px;
+    }
+
+    .form-section {
+        padding: 35px 22px;
+    }
+
+    .form-heading h2 {
+        font-size: 24px;
+    }
+
+    .form-options {
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+
+}
